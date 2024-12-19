@@ -17,7 +17,11 @@
     font-weight: bold;
 
     &:hover {
-      color: #981898;
+      color: var(--color-violet);
     }
   }
+}
+
+.logo:hover path {
+  fill: var(--color-violet);
 }

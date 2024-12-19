@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
 
 const Logo = () => (
-  <svg width="60" height="60" viewBox="0 0 470 334" fill="none">
+  <svg
+    width="60"
+    height="60"
+    viewBox="0 0 470 334"
+    fill="none"
+    className={styles.logo}
+  >
     <path
       opacity="0.3"
       fill-rule="evenodd"
