@@ -4,6 +4,7 @@ body {
   font-style: normal;
   font-optical-sizing: auto;
   font-size: 62.5%;
+  color: var(--color-light);
 }
 
 .body {
