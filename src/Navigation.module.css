@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 0.95rem;
+  z-index: 2;
+
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    font-weight: bold;
+
+    &:hover {
+      color: #981898;
+    }
+  }
+}

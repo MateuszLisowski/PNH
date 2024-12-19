@@ -1,5 +1,13 @@
+body {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 62.5%;
+}
+
 .body {
-  background-color: rgb(7, 7, 7);
+  background-color: var(--color-dark);
   width: 100vw;
   height: 100vh;
 }

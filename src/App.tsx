@@ -1,17 +1,24 @@
-import React from "react";
 import styles from "./App.module.css";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Home } from "./pages";
+import { Navigation } from "./Navigation";
+import { Layout } from "./components/Layout";
 
 function App() {
   return (
     <Router>
       <div className={styles.body}>
-        <Routes>
-          <Route path="/" element={<></>} />
-          <Route path="/about" element={<p>About me</p>} />
-        </Routes>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<p>O nas</p>} />
+            <Route path="/events" element={<p>wydarzenia</p>} />
+            <Route path="/offer" element={<p>Oferta</p>} />
+            <Route path="/rent" element={<p>Wynajem</p>} />
+            <Route path="/contact" element={<p>Kontakt</p>} />
+          </Routes>
+        </Layout>
+        <Navigation />
       </div>
     </Router>
   );
