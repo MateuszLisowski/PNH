@@ -8,6 +8,7 @@
   width: 100%;
   font-size: 0.95rem;
   z-index: 2;
+  background-color: var(--color-dark);
 
   a {
     color: white;

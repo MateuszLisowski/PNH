@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 30px 30px;
+  font-size: 0.8rem;
+}
+
+.section {
+  margin: 0 30px;
+}
+
+.categoryName {
+  font-weight: bold;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin-block-end: 15px;
+}
+
+.link {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--color-violet);
+  }
+}
+
+.logo {
+  margin-inline-end: 5px;
+}
