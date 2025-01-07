@@ -33,11 +33,18 @@ export const Footer = () => {
     {
       categoryName: "O nas",
       links: [
-        { name: "Jak dojechać", link: "", logo: "" },
+        { name: "Jak dojechać", link: "./contact/#localization", logo: "" },
         { name: "Dane", link: "", logo: "" },
         { name: "Manifest", link: "", logo: "" },
         { name: "Nauczyciele", link: "", logo: "" },
         { name: "Blog", link: "", logo: "" },
+        { name: "Wolontariat", link: "", logo: "" },
+      ],
+    },
+    {
+      categoryName: "",
+      links: [
+        { name: "Partnerzy", link: "", logo: "" },
         { name: "Kontakt", link: "./contact/#info", logo: "" },
       ],
     },

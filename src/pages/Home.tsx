@@ -3,7 +3,7 @@ import styles from "./Home.module.css";
 
 export const Home = () => {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <h1 className={styles.title}>
         Tworzymy kulturę niezależną w Białymstoku
       </h1>
@@ -20,6 +20,6 @@ export const Home = () => {
           Wydarzenia
         </Link>
       </div>
-    </div>
+    </main>
   );
 };
