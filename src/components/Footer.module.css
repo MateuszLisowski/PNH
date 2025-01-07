@@ -3,6 +3,7 @@
   justify-content: flex-start;
   margin: 30px 30px 30px 30px;
   font-size: 0.8rem;
+  flex-wrap: wrap;
 }
 
 .section {
@@ -14,6 +15,10 @@
   font-size: 0.9rem;
   white-space: nowrap;
   margin-block-end: 15px;
+}
+
+.links {
+  margin-top: 29px;
 }
 
 .link {

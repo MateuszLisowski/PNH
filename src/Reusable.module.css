@@ -1,0 +1,30 @@
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 50px 0 30px 0;
+}
+
+.sectionText {
+  font-size: 1.2rem;
+  line-height: 24px;
+}
+
+.text {
+  margin: 20px 0;
+}
+
+.smallText {
+  margin: 10px 0;
+}
+
+.columnFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}

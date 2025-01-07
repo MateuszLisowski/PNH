@@ -58,7 +58,7 @@ export const Navigation = () => {
       <div>
         <Link to="/about">O nas</Link>
         <Link to="/offer">Oferta</Link>
-        <Link to="/shop">Sklep</Link>
+        {/* <Link to="/shop">Sklep</Link> */}
         <Link to="/events">Wydarzenia</Link>
         <Link to="/news">Aktualności</Link>
         <Link to="/contact">Kontakt</Link>

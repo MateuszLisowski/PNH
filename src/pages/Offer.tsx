@@ -1,4 +1,14 @@
+import { SubpageLayout } from "../components/SubpageLayout";
+import { useScrollToSection } from "../utils/useScrollToSection";
+
 export const Offer = () => {
+  useScrollToSection();
+
+  return (
+    <main>
+      <SubpageLayout>s</SubpageLayout>
+    </main>
+  );
   //   Cennik i usługi:
   // Naprawa i Konserwacja Sprzętu:
   // __ zapytania od ludzi co potrzebują naprawić
