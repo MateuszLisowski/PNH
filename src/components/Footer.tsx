@@ -82,12 +82,6 @@ export const Footer = () => {
           logo: "",
           target: "_self",
         },
-        {
-          name: "Wydarzenia",
-          link: "./offer#events",
-          logo: "",
-          target: "_self",
-        },
       ],
     },
     {
@@ -123,7 +117,6 @@ export const Footer = () => {
           logo: "",
           target: "_self",
         },
-        { name: "Kontakt", link: "./contact/#info", logo: "", target: "_self" },
       ],
     },
   ];
@@ -134,7 +127,7 @@ export const Footer = () => {
         {categories.map(({ categoryName, links }) => (
           <li key={categoryName} className={styles.section}>
             <h3 className={styles.categoryName}>{categoryName}</h3>
-            <ul className={categoryName ? "" : styles.links}>
+            <ul>
               {links.map(({ name, link, logo, target }) => (
                 <li key={name} className={styles.link}>
                   {Boolean(logo) && (

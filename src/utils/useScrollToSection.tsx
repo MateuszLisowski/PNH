@@ -7,7 +7,14 @@ const scrollToSection = (hash: string) => {
     const element = document.getElementById(elementId);
 
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - 100;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     } else {
       throw new Error(`Element with id ${elementId} not found`);
     }

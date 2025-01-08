@@ -1,5 +1,6 @@
 import { SubpageLayout } from "../components/SubpageLayout";
 import { useScrollToSection } from "../utils/useScrollToSection";
+import styles from "../Reusable.module.css";
 
 const GoogleMap = () => {
   return (
@@ -22,15 +23,25 @@ export const Contact = () => {
   return (
     <main>
       <SubpageLayout>
-        <h1>Kontakt</h1>
-        <h2 id="localization">Lokalizacja</h2>
-        <p>
+        <section>
+          <h1 id="info" className={styles.sectionTitle}>
+            Kontakt
+          </h1>
+        </section>
+        <section>
+          <h2 id="localization" className={styles.sectionTitle}>
+            Lokalizacja
+          </h2>
           New Hope znajduje się w Białymstoku, w dzielnicy Centrum, przy ulicy
           Wyszyńskiego. Obok społemu kometa. Parking znajduje się za sklepem lub
           płatny przy ulicy.
-        </p>
+        </section>
         <GoogleMap />
-        <div>TUTAJ ZDJECIE WEJSCIA DO LOKALU Z HUBERTEM I STRZAŁKAMI</div>
+        <section>
+          <h2 id="partnership" className={styles.sectionTitle}>
+            Zostań partnerem
+          </h2>
+        </section>
       </SubpageLayout>
     </main>
   );

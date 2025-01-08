@@ -15,10 +15,7 @@
   font-size: 0.9rem;
   white-space: nowrap;
   margin-block-end: 15px;
-}
-
-.links {
-  margin-top: 29px;
+  margin-block-start: 10px;
 }
 
 .link {

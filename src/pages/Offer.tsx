@@ -1,12 +1,26 @@
 import { SubpageLayout } from "../components/SubpageLayout";
 import { useScrollToSection } from "../utils/useScrollToSection";
+import styles from "../Reusable.module.css";
 
 export const Offer = () => {
   useScrollToSection();
 
   return (
     <main>
-      <SubpageLayout>s</SubpageLayout>
+      <SubpageLayout>
+        <h2 id="workshops" className={styles.sectionTitle}>
+          Warsztaty DJ-skie
+        </h2>
+        <h2 id="lessons" className={styles.sectionTitle}>
+          Lekcje indywidualne
+        </h2>
+        <h2 id="rent" className={styles.sectionTitle}>
+          Wynajem przestrzeni
+        </h2>
+        <h2 id="services" className={styles.sectionTitle}>
+          Cennik
+        </h2>
+      </SubpageLayout>
     </main>
   );
   //   Cennik i usługi:
