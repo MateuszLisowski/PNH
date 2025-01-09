@@ -4,6 +4,8 @@ import styles from "../Reusable.module.css";
 import aboutStyles from "./About.module.css";
 import { Card } from "../components/Card";
 import { useScrollToSection } from "../utils/useScrollToSection";
+import hubertFoto from "../assets/hubert.jpg";
+import frankeeFoto from "../assets/frankee.jpg";
 
 export const About = () => {
   useScrollToSection();
@@ -13,13 +15,13 @@ export const About = () => {
       nick: "MIFI77 / Hubert O. Marcinkiewicz",
       description:
         "DJ, animator kultury, twórca Projektu New Hope, jak i założyciel pierwszej szkoły DJ-skiej na Podlasiu. Przez ostatnią dekadę skupiony przede wszystkim na rozwoju podlaskiej sceny kulturalnej i klubowej. Jako menedżer współtworzył kultowe miejsca — kluby muzyczne FOMO i METRO przy ulicy Białówny 9/1.Mifi od najmłodszych lat dzieli się swoją fascynacją do sztuki DJ'ingu i płyt winylowych. Jego selekcja jest mocno za fundamentowana w Electro-Techno z Detroit i IDM. Eksperymentuje z muzyką Braindance i Acid żonglując różnorodnymi sekwencjami perkusyjnymi.",
-      foto: "",
+      foto: hubertFoto,
     },
     {
       nick: "Frankee / Karol Daniłowicz",
       description:
-        "Kolekcjoner płyt winylowych i od 1999 roku aktywny dj. Urodził się w Poznaniu a dorastał w Inowrocławiu. W Białymstoku mieszka od 2003 roku. Swoją przygodę z muzyką zaczął w młodym wieku. Z muzyką elektroniczną pierwszy raz zetknął się w 1991 roku, kiedy od ojca dostał kasetę z koncertem Jean Michela Jarre’a. Kilka lat później, zafascynowany audycją Technikum Mechnizacji Muzyki w popularnej ogólnopolskiej stacji radiowej, kupił pierwsze profesjonalne odtwarzacze i mikser didżejski, potem gramofony i zaczął ćwiczyć miksowanie. W wieku 16 lat stał się rezydentem największego lokalnego klubu, promując brytyjskie i amerykańskie house’owe brzmienia. Następnie, zaczął organizować undergroundowe imprezy w Poznaniu, Toruniu i Bydgoszczy. W trakcie nauki w szkole średniej w ramach praktyk poszerzał muzyczną wiedzę w Inowrocławskim Radiu GRA. Tajniki dotyczące nagłośnienia i sceny poznał będąc dźwiękowcem Inowrocławskiego Teatru Otwartego ITO. W Białymstoku, znany zarówno z organizowania imprez w lokalnych klubach, cyklicznych wieczorów z muzyką elektroniczną, acid jazzową „Miękka Soffa” w Odeonie, Kontakcie i Homebarze, jak również z wieloletniej rezydentury w klubie Metro: Gorączka Czwartkowej Nocy, House Of Metro. W latach  2013 - 2018 prowadził prawdopodobnie najdłuższą autorską audycję w kraju (w sumie 4h w każdy piątek) „Miękka Sofa” i „Dobry Wieczór”. Dziś nadal można go spotkać za gramofonami w Białostockich klubach jak i podczas warsztatów / kursów dj.",
-      foto: "",
+        "Kolekcjoner winyli i aktywny DJ od 1999 roku. Zafascynowany muzyką elektroniczną od 1991 roku, gdy otrzymał kasetę z koncertem Jean Michela Jarre’a. Po audycji Technikum Mechanizacji Muzyki kupił pierwsze odtwarzacze, mikser i gramofony, zaczynając miksowanie. Organizator undergroundowych imprez w Poznaniu, Toruniu, Bydgoszczy i Białymstoku. W Białymstoku znany z cyklicznych wieczorów „Miękka Soffa”, rezydentury w klubie Metro (Gorączka Czwartkowej Nocy, House Of Metro) oraz występów w lokalnych klubach. Prowadzi warsztaty DJ i nadal gra w Białostockich klubach.",
+      foto: frankeeFoto,
     },
   ];
 
@@ -53,7 +55,7 @@ export const About = () => {
         <h2 id="teachers" className={styles.sectionTitle}>
           Nauczyciele
         </h2>
-        <article className={cx([styles.sectionText, styles.rowFlex])}>
+        <section className={cx([styles.sectionText, styles.rowFlex])}>
           {teachers.map(({ description, nick, foto }) => (
             <Card
               key={nick}
@@ -62,7 +64,7 @@ export const About = () => {
               foto={foto}
             />
           ))}
-        </article>
+        </section>
         <h2 className={styles.sectionTitle}>Członkowie stowarzyszenia</h2>
         <article className={styles.sectionText}>
           <p className={styles.smallText}>Hubert O. Marcinkiewicz</p>

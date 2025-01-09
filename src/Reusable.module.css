@@ -1,7 +1,7 @@
 .sectionTitle {
   font-size: 3rem;
   font-weight: bold;
-  margin: 50px 0 30px 0;
+  margin: 70px 0 40px 0;
 }
 
 .sectionText {
@@ -27,4 +27,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.link {
+  color: rgb(39, 89, 163);
+
+  &:hover {
+    color: var(--color-violet);
+  }
 }

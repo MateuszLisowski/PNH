@@ -58,9 +58,10 @@ export const Navigation = () => {
       <div>
         <Link to="/about">O nas</Link>
         <Link to="/offer">Oferta</Link>
-        {/* <Link to="/shop">Sklep</Link> */}
+        <Link to="/vinyl-voucher">Vinyl Voucher</Link>
         <Link to="/events">Wydarzenia</Link>
-        <Link to="/news">Aktualności</Link>
+        <Link to="/past-events">Archiwum</Link>
+        <Link to="/pnh-collective">PNH Kolektyw</Link>
         <Link to="/contact">Kontakt</Link>
       </div>
     </nav>

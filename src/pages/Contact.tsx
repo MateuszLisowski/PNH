@@ -1,19 +1,17 @@
 import { SubpageLayout } from "../components/SubpageLayout";
 import { useScrollToSection } from "../utils/useScrollToSection";
+import { cx } from "../utils/classnames";
 import styles from "../Reusable.module.css";
 
 const GoogleMap = () => {
   return (
-    <div>
-      <h2>Nasza lokalizacja</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d149.6200491954938!2d23.14089115024508!3d53.12956751487228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734898991859!5m2!1sen!2sus"
-        width="500"
-        height="400"
-        loading="lazy"
-        allowFullScreen
-      ></iframe>
-    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d149.6200491954938!2d23.14089115024508!3d53.12956751487228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734898991859!5m2!1sen!2sus"
+      width="500"
+      height="400"
+      loading="lazy"
+      allowFullScreen
+    ></iframe>
   );
 };
 
@@ -27,14 +25,28 @@ export const Contact = () => {
           <h1 id="info" className={styles.sectionTitle}>
             Kontakt
           </h1>
+          <p className={styles.sectionText}>
+            Email główny - projektnewhope@gmail.com
+          </p>
+          <p className={styles.sectionText}>
+            Email Warsztaty - projektnewhope.warsztaty@gmail.com
+          </p>
+          <p className={styles.sectionText}>Telefon kontaktowy +48530546016 </p>
+          <p className={styles.sectionText}>Wyszyńskiego 6A/07</p>
+          <p className={styles.sectionText}>15-888 Białystok</p>
         </section>
         <section>
           <h2 id="localization" className={styles.sectionTitle}>
             Lokalizacja
           </h2>
-          New Hope znajduje się w Białymstoku, w dzielnicy Centrum, przy ulicy
-          Wyszyńskiego. Obok społemu kometa. Parking znajduje się za sklepem lub
-          płatny przy ulicy.
+          <p className={cx([styles.text, styles.sectionText])}>
+            New Hope znajduje się w Białymstoku, nieopodal dworca PKS, przy
+            ulicy Wyszyńskiego. Obok sklepu Kometa. Samochód mozna zaparkować na
+            bezpłatnym parkingu za sklepem lub płatnym przy ulicy głównej.
+            Wejście do lokalu znajduje się w prawej części rzemieślnika przy
+            ulicy Wyszyńskiego 6A. Nasze miejsce usytuowane jest w podziemiach
+            budynku, do którego prowadzą schody i długi korytarz.
+          </p>
         </section>
         <GoogleMap />
         <section>
