@@ -1,21 +1,22 @@
 .card {
   border-radius: 6px;
-  padding: 20px 10px 20px 20px;
-  width: 320px;
+  padding: 30px 20px 30px 30px;
+  width: max(380px, 25vw);
   font-size: 0.9rem;
   background-color: var(--color-dark);
-  margin: 20px;
   height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  box-shadow: 0px 3px 7px 5px rgba(64, 11, 78, 0.7);
+  box-shadow: 0px 4px 6px 7px rgba(64, 11, 78, 0.8);
   transition: box-shadow 0.3s ease;
+  margin-right: 60px;
+  margin-top: 40px;
   z-index: 2;
 
   &:hover {
-    box-shadow: 0px 6px 11px 11px rgba(64, 11, 78, 0.9);
+    box-shadow: 0px 6px 9px 11px rgba(64, 11, 78, 1);
   }
 }
 
@@ -35,4 +36,22 @@
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 15px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.tag {
+  margin-right: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: var(--color-violet);
+  border-radius: 20px;
 }

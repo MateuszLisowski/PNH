@@ -13,7 +13,7 @@ export const Home = () => {
         rozwijać swoje pasje i umiejętności
       </h2>
       <div className={styles.buttons}>
-        <Link to="/offer" className={styles.link}>
+        <Link to="/offer" className={styles.linkButton}>
           Warsztaty
         </Link>
         <Link to="/offer" className={styles.secondLink}>

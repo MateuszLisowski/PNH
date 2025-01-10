@@ -29,11 +29,10 @@
   margin-top: 30px;
 }
 
-.link {
+.linkButton {
   color: var(--color-light);
   text-decoration: none;
   border: 3px solid var(--color-light);
-  margin: 0 20px;
   font-size: 1.2rem;
   border-radius: 4px;
   font-weight: bold;

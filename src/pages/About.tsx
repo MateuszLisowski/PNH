@@ -16,12 +16,14 @@ export const About = () => {
       description:
         "DJ, animator kultury, twórca Projektu New Hope, jak i założyciel pierwszej szkoły DJ-skiej na Podlasiu. Przez ostatnią dekadę skupiony przede wszystkim na rozwoju podlaskiej sceny kulturalnej i klubowej. Jako menedżer współtworzył kultowe miejsca — kluby muzyczne FOMO i METRO przy ulicy Białówny 9/1.Mifi od najmłodszych lat dzieli się swoją fascynacją do sztuki DJ'ingu i płyt winylowych. Jego selekcja jest mocno za fundamentowana w Electro-Techno z Detroit i IDM. Eksperymentuje z muzyką Braindance i Acid żonglując różnorodnymi sekwencjami perkusyjnymi.",
       foto: hubertFoto,
+      tags: ["#lekcje-indwidualne", "#lekcje-grupowe"],
     },
     {
       nick: "Frankee / Karol Daniłowicz",
       description:
         "Kolekcjoner winyli i aktywny DJ od 1999 roku. Zafascynowany muzyką elektroniczną od 1991 roku, gdy otrzymał kasetę z koncertem Jean Michela Jarre’a. Po audycji Technikum Mechanizacji Muzyki kupił pierwsze odtwarzacze, mikser i gramofony, zaczynając miksowanie. Organizator undergroundowych imprez w Poznaniu, Toruniu, Bydgoszczy i Białymstoku. W Białymstoku znany z cyklicznych wieczorów „Miękka Soffa”, rezydentury w klubie Metro (Gorączka Czwartkowej Nocy, House Of Metro) oraz występów w lokalnych klubach. Prowadzi warsztaty DJ i nadal gra w Białostockich klubach.",
       foto: frankeeFoto,
+      tags: ["#lekcje-grupowe"],
     },
   ];
 
@@ -56,12 +58,13 @@ export const About = () => {
           Nauczyciele
         </h2>
         <section className={cx([styles.sectionText, styles.rowFlex])}>
-          {teachers.map(({ description, nick, foto }) => (
+          {teachers.map(({ description, nick, foto, tags }) => (
             <Card
               key={nick}
               description={description}
               nick={nick}
               foto={foto}
+              tags={tags}
             />
           ))}
         </section>

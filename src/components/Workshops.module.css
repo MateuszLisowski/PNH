@@ -1,0 +1,39 @@
+.sectionName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.row {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.dot {
+  background-color: var(--color-light);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.workshops {
+  width: 90%;
+}

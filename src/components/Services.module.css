@@ -1,0 +1,32 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  width: 70vw;
+  font-weight: bold;
+}
+
+.service {
+  font-size: 1.1rem;
+  width: 60%;
+}
+
+.price {
+  font-size: 1.3rem;
+  width: 30%;
+}
+
+.services {
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.sectionName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-light);
+  letter-spacing: 2px;
+  width: 70vw;
+}
