@@ -1,0 +1,43 @@
+.title {
+  letter-spacing: 6px;
+  line-height: 90px;
+  font-size: 5rem;
+  margin-top: 20px;
+  color: var(--color-violet);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 60px;
+  line-height: 40px;
+}
+
+.image {
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 8px;
+}
+
+.textContainer {
+  max-width: 500px;
+  width: 100%;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.lastImage {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.section {
+  width: 80%;
+  max-width: 1000px;
+  margin-bottom: 100px;
+}

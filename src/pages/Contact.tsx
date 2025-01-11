@@ -6,7 +6,7 @@ import styles from "../Reusable.module.css";
 const GoogleMap = () => {
   return (
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d149.6200491954938!2d23.14089115024508!3d53.12956751487228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734898991859!5m2!1sen!2sus"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76609.026987841!2d23.07409198015058!3d53.12756945836712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f1.3!3m3!1m2!1s0x82285a0a1cb1a273%3A0xcb8a492df14c54db!2sProjekt%20New%20Hope!5e0!3m2!1spl!2spl!4v1736604271443!5m2!1spl!2spl"
       width="500"
       height="400"
       loading="lazy"
@@ -27,7 +27,7 @@ export const Contact = () => {
           </h1>
           <section className={styles.sectionText}>
             <p className={styles.text}>
-              Telefon: <span className={styles.contact}>+48530546016</span>
+              Telefon: <span className={styles.contact}>+48 530 546 016</span>
             </p>
             <p className={styles.smallText}>
               Email główny -{" "}

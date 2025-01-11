@@ -19,7 +19,7 @@ function App() {
             <Route path="/offer" element={<Offer />} />
             <Route path="/rent" element={<></>} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/vinyl-voucher" element={<Voucher />} />
+            <Route path="/voucher" element={<Voucher />} />
             <Route path="/pnh-collective" element={<></>} />
             <Route path="/past-events" element={<></>} />
             <Route

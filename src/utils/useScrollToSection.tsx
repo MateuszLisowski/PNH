@@ -15,6 +15,8 @@ const scrollToSection = (hash: string) => {
         top: offsetPosition,
         behavior: "smooth",
       });
+
+      // TODO: after scroll remove hash from url
     } else {
       throw new Error(`Element with id ${elementId} not found`);
     }

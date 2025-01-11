@@ -9,6 +9,11 @@
   line-height: 28px;
 }
 
+.littleText {
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
 .text {
   margin: 20px 0;
 }
