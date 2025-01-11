@@ -1,4 +1,4 @@
 .layout {
-  padding-top: 100px;
+  padding: 100px 5vw 0 5vw;
   background-color: var(--color-dark);
 }

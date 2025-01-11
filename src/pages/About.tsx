@@ -42,18 +42,6 @@ export const About = () => {
             swoją przygodę ze sztuką DJ-ską.
           </p>
         </article>
-        <h2 id="info" className={styles.sectionTitle}>
-          Dane stowarzyszenia
-        </h2>
-        <article className={styles.sectionText}>
-          <p className={styles.smallText}>Stowarzyszenie Projekt New Hope</p>
-          <p className={styles.smallText}>Wyszyńskiego 6A/07</p>
-          <p className={styles.smallText}>15-888 Białystok</p>
-          <br />
-          <p className={styles.smallText}>KRS 0001035937</p>
-          <p className={styles.smallText}>NIP 5423468546</p>
-          <p className={styles.smallText}>REGON 525373163</p>
-        </article>
         <h2 id="teachers" className={styles.sectionTitle}>
           Nauczyciele
         </h2>
@@ -68,6 +56,41 @@ export const About = () => {
             />
           ))}
         </section>
+        <section>
+          <h2 className={styles.sectionTitle}>Partnerzy</h2>
+          <article className={cx([styles.sectionText, styles.rowFlex])}>
+            <span className={aboutStyles.logo}>{technicsLogo}</span>
+            <span className={aboutStyles.logo}>{nativeInstrumentsLogo}</span>
+          </article>
+          <article className={styles.sectionText}>
+            <p className={styles.text}>
+              Projekt New Hope posiada sprawdzone kooperacje z uznanymi markami,
+              urzędem miasta oraz instytucjami kultury, co świadczy o
+              wiarygodności szkoły. Wspólnie z naszymi partnerami tworzymy
+              wydarzenia, unikalne warsztaty muzyczne i realizujemy kreatywną
+              promocję.
+            </p>
+            <p className={styles.text}>
+              Stowarzyszenie umożliwia potencjalnym partnerom dostęp do
+              dynamicznie rozwijającej się społeczności zainteresowanej kulturą
+              alternatywną w regionie i poza nim: uczniów szkoły DJ-skiej,
+              uczestników wydarzeń Projektu i community promującego działania
+              PNH.
+            </p>
+          </article>
+        </section>
+        <h2 id="info" className={styles.sectionTitle}>
+          Dane stowarzyszenia
+        </h2>
+        <article className={styles.sectionText}>
+          <p className={styles.smallText}>Stowarzyszenie Projekt New Hope</p>
+          <p className={styles.smallText}>Wyszyńskiego 6A/07</p>
+          <p className={styles.smallText}>15-888 Białystok</p>
+          <br />
+          <p className={styles.smallText}>KRS 0001035937</p>
+          <p className={styles.smallText}>NIP 5423468546</p>
+          <p className={styles.smallText}>REGON 525373163</p>
+        </article>
         <h2 className={styles.sectionTitle}>Członkowie stowarzyszenia</h2>
         <article className={styles.sectionText}>
           <p className={styles.smallText}>Hubert O. Marcinkiewicz</p>
@@ -75,17 +98,6 @@ export const About = () => {
           <p className={styles.smallText}>Aneta Lisowska</p>
           <p className={styles.smallText}>Karol Daniłowicz</p>
           <p className={styles.smallText}>Ania Łaskarzewska</p>
-        </article>
-        <h2 className={styles.sectionTitle}>Partnerzy</h2>
-        <article
-          className={cx([
-            styles.sectionText,
-            styles.rowFlex,
-            aboutStyles.logoWrapper,
-          ])}
-        >
-          <span className={aboutStyles.logo}>{technicsLogo}</span>
-          <span className={aboutStyles.logo}>{nativeInstrumentsLogo}</span>
         </article>
       </SubpageLayout>
     </main>

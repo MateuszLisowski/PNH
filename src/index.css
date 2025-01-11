@@ -11,8 +11,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-light: rgba(255, 255, 255, 0.87);
-  --color-dark: rgb(7, 7, 7);
+  --color-light: rgba(247, 241, 238, 0.87);
+  --color-dark: rgb(9, 7, 7);
   --color-violet: #981898;
 }
 
