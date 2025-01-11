@@ -106,11 +106,6 @@ export const Footer = () => {
           logo: "",
           target: "_blank",
         },
-      ],
-    },
-    {
-      categoryName: "",
-      links: [
         {
           name: "Zostań partnerem",
           link: "./contact#partnership",

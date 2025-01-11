@@ -5,6 +5,7 @@ import { Layout } from "./components/Layout";
 import { Footer } from "./components/Footer";
 import styles from "./App.module.css";
 import { BeginnerClassProgram } from "./pages/BeginnerClassProgram";
+import { Voucher } from "./pages/Voucher";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <Route path="/offer" element={<Offer />} />
             <Route path="/rent" element={<></>} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/vinyl-voucher" element={<></>} />
+            <Route path="/vinyl-voucher" element={<Voucher />} />
             <Route path="/pnh-collective" element={<></>} />
             <Route path="/past-events" element={<></>} />
             <Route
