@@ -25,15 +25,24 @@ export const Contact = () => {
           <h1 id="info" className={styles.sectionTitle}>
             Kontakt
           </h1>
-          <p className={styles.sectionText}>
-            Email główny - projektnewhope@gmail.com
-          </p>
-          <p className={styles.sectionText}>
-            Email Warsztaty - projektnewhope.warsztaty@gmail.com
-          </p>
-          <p className={styles.sectionText}>Telefon kontaktowy +48530546016 </p>
-          <p className={styles.sectionText}>Wyszyńskiego 6A/07</p>
-          <p className={styles.sectionText}>15-888 Białystok</p>
+          <section className={styles.sectionText}>
+            <p className={styles.text}>
+              Telefon: <span className={styles.contact}>+48530546016</span>
+            </p>
+            <p className={styles.smallText}>
+              Email główny -{" "}
+              <span className={styles.contact}>projektnewhope@gmail.com</span>
+            </p>
+            <p className={styles.text}>
+              Email Warsztaty -{" "}
+              <span className={styles.contact}>
+                projektnewhope.warsztaty@gmail.com
+              </span>
+            </p>
+            <p className={styles.smallText}>Adres:</p>
+            <p className={styles.sectionText}>Wyszyńskiego 6A/07</p>
+            <p className={styles.sectionText}>15-888 Białystok</p>
+          </section>
         </section>
         <section>
           <h2 id="localization" className={styles.sectionTitle}>

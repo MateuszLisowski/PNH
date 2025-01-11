@@ -29,6 +29,11 @@
   align-items: center;
 }
 
+.contact {
+  color: rgb(39, 89, 163);
+  font-weight: bold;
+}
+
 .link {
   color: rgb(39, 89, 163);
 

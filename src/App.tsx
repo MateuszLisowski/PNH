@@ -4,6 +4,7 @@ import { Navigation } from "./Navigation";
 import { Layout } from "./components/Layout";
 import { Footer } from "./components/Footer";
 import styles from "./App.module.css";
+import { BeginnerClassProgram } from "./pages/BeginnerClassProgram";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
             <Route path="/vinyl-voucher" element={<></>} />
             <Route path="/pnh-collective" element={<></>} />
             <Route path="/past-events" element={<></>} />
+            <Route
+              path="/offer/beginner-class-program"
+              element={<BeginnerClassProgram />}
+            />
             <Route path="*" element={<p>NOT FOUND TODO</p>} />
           </Routes>
           <Footer />
