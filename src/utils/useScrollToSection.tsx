@@ -15,7 +15,6 @@ const scrollToSection = (hash: string) => {
         top: offsetPosition,
         behavior: "smooth",
       });
-
       // TODO: after scroll remove hash from url
     } else {
       throw new Error(`Element with id ${elementId} not found`);
@@ -27,7 +26,14 @@ export const useScrollToSection = () => {
   const { hash } = useLocation();
 
   useEffect(() => {
-    scrollToSection(hash);
+    if (!hash) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      scrollToSection(hash);
+    }
   }, [hash]);
 
   return null;

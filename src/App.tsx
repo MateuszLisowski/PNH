@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import styles from "./App.module.css";
 import { BeginnerClassProgram } from "./pages/BeginnerClassProgram";
 import { Voucher } from "./pages/Voucher";
+import { Events } from "./pages/Events";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/events" element={<></>} />
+            <Route path="/events" element={<Events />} />
             <Route path="/offer" element={<Offer />} />
             <Route path="/rent" element={<></>} />
             <Route path="/contact" element={<Contact />} />
