@@ -1,0 +1,12 @@
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.image {
+  height: 350px;
+  object-fit: contain;
+  max-width: min(60vw, 600px);
+}

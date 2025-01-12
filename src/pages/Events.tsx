@@ -81,9 +81,9 @@ export const Events = () => {
               1600: 5,
             }}
           >
-            <Masonry gutter="3px">
+            <Masonry gutter="5px">
               {imagePaths.map((image, index) => (
-                <div key={index} className="image-container">
+                <div key={index}>
                   <img
                     src={image}
                     alt="zdjęcie z wydarzenia"
