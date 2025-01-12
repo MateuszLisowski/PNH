@@ -2,7 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 130px;
+  padding-bottom: 100px;
+  z-index: 1;
+  position: relative;
+}
+
+.background {
+  background-image: url("../assets/collage/340746994_610941687276072_741370566768146264_n.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  filter: brightness(0.5) saturate(0.4) grayscale(0.9);
 }
 
 .title {
