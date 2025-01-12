@@ -5,6 +5,7 @@ import eventImage from "../assets/event-image.jpg";
 import styles from "./Events.module.css";
 import collage from "../assets/images";
 import { useState, useEffect } from "react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export const Events = () => {
   const events = [
@@ -71,15 +72,27 @@ export const Events = () => {
           ))}
         </section>
         <section className={styles.collage}>
-          {imagePaths.map((image, index) => (
-            <div key={index} className="image-container">
-              <img
-                src={image}
-                alt="zdjęcie z wydarzenia"
-                className={styles.image}
-              />
-            </div>
-          ))}
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{
+              350: 1,
+              750: 2,
+              900: 3,
+              1200: 4,
+              1600: 5,
+            }}
+          >
+            <Masonry gutter="3px">
+              {imagePaths.map((image, index) => (
+                <div key={index} className="image-container">
+                  <img
+                    src={image}
+                    alt="zdjęcie z wydarzenia"
+                    className={styles.image}
+                  />
+                </div>
+              ))}
+            </Masonry>
+          </ResponsiveMasonry>
         </section>
       </SubpageLayout>
     </main>
