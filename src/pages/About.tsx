@@ -6,6 +6,8 @@ import { Card } from "../components/Card";
 import { useScrollToSection } from "../utils/useScrollToSection";
 import hubertFoto from "../assets/hubert.jpg";
 import frankeeFoto from "../assets/frankee.jpg";
+import homeStyles from "./Home.module.css";
+import { Link } from "react-router-dom";
 
 export const About = () => {
   useScrollToSection();
@@ -56,7 +58,7 @@ export const About = () => {
             />
           ))}
         </section>
-        <section>
+        <section id="partnership">
           <h2 className={styles.sectionTitle}>Partnerzy</h2>
           <article className={cx([styles.sectionText, styles.rowFlex])}>
             <span className={aboutStyles.logo}>{technicsLogo}</span>
@@ -76,6 +78,26 @@ export const About = () => {
               alternatywną w regionie i poza nim: uczniów szkoły DJ-skiej,
               uczestników wydarzeń Projektu i community promującego działania
               PNH.
+            </p>
+            <div style={{ margin: "50px 0 40px 0" }}>
+              <Link to="../contact#info" className={homeStyles.linkButton}>
+                Skontaktuj się z nami
+              </Link>
+            </div>
+            <p className={styles.text}>
+              Dzięki współpracy z najbardziej uznaną marką w branży muzycznej
+              <span style={{ fontWeight: "bold" }}> Technics</span> jesteśmy
+              zaopatrzeni w najnowsze gramofony z kultowej serii SL1210.
+              Wspólnie realizujemy edukacyjne materiały wideo o tematyce
+              muzycznej w ramach serii Technics DJ Academy.
+            </p>
+            <p className={styles.text}>
+              Współpraca z firmą, która wyznacza standardy cyfrowego DJ-ingu
+              owocuje regularną aktualizacją sprzętową. Urządzenia takie jak
+              TRAKTOR są niezbędnym wyposażeniem naszej szkoły. Marka{" "}
+              <span style={{ fontWeight: "bold" }}>Native Instruments</span>{" "}
+              pomaga nam zwiększać możliwości techniczne wprowadzając stały
+              rozwój w trakcie naszych warsztatów muzycznych.
             </p>
           </article>
         </section>

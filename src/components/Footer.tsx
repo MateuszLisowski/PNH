@@ -108,7 +108,7 @@ export const Footer = () => {
         },
         {
           name: "Zostań partnerem",
-          link: "./contact#partnership",
+          link: "./about#partnership",
           logo: "",
           target: "_self",
         },

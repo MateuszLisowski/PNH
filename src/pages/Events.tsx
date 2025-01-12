@@ -65,7 +65,7 @@ export const Events = () => {
   return (
     <main className={reusableStyles.sectionText}>
       <SubpageLayout>
-        <h1 className={reusableStyles.sectionTitle}>Najblisze wydarzenia</h1>
+        <h1 className={reusableStyles.sectionTitle}>Najblizsze wydarzenia</h1>
         <section className={styles.events}>
           {events.map((event) => (
             <SingleEvent event={event} />

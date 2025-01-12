@@ -118,7 +118,7 @@ export const Offer = () => {
           />
           <Workshops
             sectionName="Kursy na poziomie średniozaawansowanym i zaawansowanym"
-            subtitle=" Zajęcia skierowane do osób, które ukończyły kurs podstawowy oraz osób z podstawową lub średnio zaawansowaną wiedzą"
+            subtitle="Zajęcia skierowane do osób, które ukończyły kurs podstawowy oraz osób z podstawową lub średnio zaawansowaną wiedzą"
             services={[
               {
                 title: "Kurs DJ-ski - Grupowy",
@@ -165,6 +165,30 @@ export const Offer = () => {
                   { detail: "Czas trwania zajęć: 120 min." },
                   { detail: "Częstotliwość zajęć: 1 spotkanie na tydzień" },
                   { detail: "Cena: 250 zł" },
+                ],
+              },
+            ]}
+          />
+          <Workshops
+            sectionName=""
+            subtitle=""
+            services={[
+              {
+                title: "Warsztaty uzupełniające",
+                offer: [
+                  {
+                    detail:
+                      "Oferujemy warsztaty uzupełniające dla osób, które pragną poszerzyć swoją wiedzę i umiejętności w wybranych zagadnieniach związanych z DJ-ingiem. Istnieje również możliwość zorganizowania warsztatów indywidualnych, dostosowanych do potrzeb i oczekiwań klienta",
+                  },
+                  {
+                    detail:
+                      "Zakres tematyczny: warsztaty mogą obejmować dowolne zagadnienia zaproponowane przez uczestnika",
+                  },
+                  { detail: "Czas trwania i cena: ustalane indywidualnie" },
+                  {
+                    detail:
+                      "Zgłoszenia: prosimy przesyłać na adres: projektnewhope.warsztaty@gmail.com, z dopiskiem „Warsztaty uzupełniające”",
+                  },
                 ],
               },
             ]}

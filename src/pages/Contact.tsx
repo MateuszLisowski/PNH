@@ -58,11 +58,6 @@ export const Contact = () => {
           </p>
         </section>
         <GoogleMap />
-        <section>
-          <h2 id="partnership" className={styles.sectionTitle}>
-            Zostań partnerem
-          </h2>
-        </section>
       </SubpageLayout>
     </main>
   );
