@@ -8,7 +8,7 @@ import { BeginnerClassProgram } from "./pages/BeginnerClassProgram";
 import { Voucher } from "./pages/Voucher";
 import { Events } from "./pages/Events";
 import { NotFound } from "./pages/NotFound";
-import { Collective } from "./pages/Collective";
+// import { Collective } from "./pages/Collective";
 import { PastEvents } from "./pages/PastEvents";
 import { Shop } from "./pages/Shop";
 
@@ -32,7 +32,7 @@ function App() {
               path="/offer/beginner-class-program"
               element={<BeginnerClassProgram />}
             />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </Layout>

@@ -81,7 +81,7 @@ export const About = () => {
             </p>
             <div style={{ margin: "50px 0 40px 0" }}>
               <Link to="../contact#info" className={homeStyles.linkButton}>
-                Skontaktuj się z nami
+                Zostań naszym partnerem!
               </Link>
             </div>
             <p className={styles.text}>
