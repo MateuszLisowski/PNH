@@ -14,6 +14,20 @@
   --color-light: rgba(247, 241, 238, 0.87);
   --color-dark: rgb(9, 7, 7);
   --color-violet: #981898;
+
+  --mobile-small: 320px; /* Małe telefony */
+  --mobile-medium: 375px; /* Średnie telefony */
+  --mobile-large: 425px; /* Większe telefony */
+
+  --tablet-small: 768px; /* Tablety (pionowo) */
+  --tablet-large: 1024px; /* Tablety (poziomo) */
+
+  --laptop-small: 1280px; /* Laptopy o standardowej szerokości */
+  --laptop-large: 1440px; /* Laptopy i monitory o większej rozdzielczości */
+
+  --desktop-small: 1920px; /* Monitory Full HD */
+  --desktop-large: 2560px; /* Monitory 2K */
+  --desktop-xl: 3840px; /* Monitory 4K */
 }
 
 /* Reset CSS */
