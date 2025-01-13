@@ -8,6 +8,11 @@
   align-items: flex-start;
   gap: 30px;
   line-height: 30px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    max-width: 95vw;
+  }
 }
 
 .place {

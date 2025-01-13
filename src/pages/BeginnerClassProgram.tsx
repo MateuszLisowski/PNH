@@ -3,6 +3,7 @@ import warsztaty from "../assets/warsztaty.jpg";
 import styles from "./BeginnerClassProgram.module.css";
 import reusableStyles from "../Reusable.module.css";
 import { cx } from "../utils/classnames";
+import { useScrollToSection } from "../utils/useScrollToSection";
 
 const lessons = [
   {
@@ -53,6 +54,8 @@ const lessons = [
 ];
 
 export const BeginnerClassProgram = () => {
+  useScrollToSection();
+
   return (
     <main className={reusableStyles.sectionText}>
       <SubpageLayout>

@@ -61,13 +61,13 @@ export const Offer = () => {
                   {
                     detail: (
                       <>
-                        Program kursu -&gt;
+                        Program kursu
                         <Link
                           to="../offer/beginner-class-program"
                           className={styles.link}
                           style={{ marginLeft: "5px" }}
                         >
-                          SPRAWDŹ TUTAJ
+                          sprawdź tutaj
                         </Link>
                       </>
                     ),
@@ -178,7 +178,11 @@ export const Offer = () => {
                 offer: [
                   {
                     detail:
-                      "Oferujemy warsztaty uzupełniające dla osób, które pragną poszerzyć swoją wiedzę i umiejętności w wybranych zagadnieniach związanych z DJ-ingiem. Istnieje również możliwość zorganizowania warsztatów indywidualnych, dostosowanych do potrzeb i oczekiwań klienta",
+                      "Dla osób, które pragną poszerzyć swoją wiedzę i umiejętności w wybranych zagadnieniach związanych z DJ-ingiem",
+                  },
+                  {
+                    detail:
+                      "Możliwość zorganizowania warsztatów indywidualnych lub grupowych",
                   },
                   {
                     detail:

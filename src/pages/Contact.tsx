@@ -2,6 +2,7 @@ import { SubpageLayout } from "../components/SubpageLayout";
 import { useScrollToSection } from "../utils/useScrollToSection";
 import { cx } from "../utils/classnames";
 import styles from "../Reusable.module.css";
+import contactStyles from "./Contact.module.css";
 
 const GoogleMap = () => {
   return (
@@ -11,6 +12,7 @@ const GoogleMap = () => {
       height="400"
       loading="lazy"
       allowFullScreen
+      className={contactStyles.map}
     ></iframe>
   );
 };
@@ -25,16 +27,18 @@ export const Contact = () => {
           <h1 id="info" className={styles.sectionTitle}>
             Kontakt
           </h1>
-          <section className={styles.sectionText}>
+          <section
+            className={cx([styles.sectionText, contactStyles.contactSection])}
+          >
             <p className={styles.text}>
               Telefon: <span className={styles.contact}>+48 530 546 016</span>
             </p>
             <p className={styles.smallText}>
-              Email główny -{" "}
+              Email główny:{" "}
               <span className={styles.contact}>projektnewhope@gmail.com</span>
             </p>
             <p className={styles.text}>
-              Email Warsztaty -{" "}
+              Email Warsztaty:{" "}
               <span className={styles.contact}>
                 projektnewhope.warsztaty@gmail.com
               </span>

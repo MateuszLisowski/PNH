@@ -3,17 +3,26 @@
   justify-content: space-between;
   margin: 40px 0;
   width: 70vw;
-  font-weight: bold;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .service {
   font-size: 1.1rem;
   width: 60%;
+
+  @media (max-width: 768px) {
+    width: 65%;
+    font-size: 1rem;
+  }
 }
 
 .price {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   width: 30%;
+  text-align: right;
 }
 
 .services {
@@ -29,4 +38,13 @@
   border-bottom: 1px solid var(--color-light);
   letter-spacing: 2px;
   width: 70vw;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    line-height: 36px;
+  }
+}
+
+.price {
+  text-align: right;
 }

@@ -14,7 +14,7 @@ export const Services = ({
         {services.map(({ price, service }) => (
           <li className={styles.row} key={service}>
             <p className={styles.service}>{service}</p>
-            <p>{price}</p>
+            <p className={styles.price}>{price}</p>
           </li>
         ))}
       </ul>
