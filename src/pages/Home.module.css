@@ -29,7 +29,7 @@
   line-height: 64px;
 
   @media (max-width: 768px) {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -64,6 +64,10 @@
     background-color: var(--color-light);
     color: var(--color-dark);
     box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
   }
 }
 

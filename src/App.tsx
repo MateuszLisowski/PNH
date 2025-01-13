@@ -10,7 +10,7 @@ import { Events } from "./pages/Events";
 import { NotFound } from "./pages/NotFound";
 // import { Collective } from "./pages/Collective";
 import { PastEvents } from "./pages/PastEvents";
-import { Shop } from "./pages/Shop";
+// import { Shop } from "./pages/Shop";
 
 function App() {
   return (

@@ -4,10 +4,20 @@
   margin: 30px 30px 40px 30px;
   font-size: 0.8rem;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin: 0;
+    flex-direction: column;
+  }
 }
 
 .section {
   margin: 0 30px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 }
 
 .categoryName {

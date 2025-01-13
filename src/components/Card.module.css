@@ -11,12 +11,19 @@
   align-items: center;
   box-shadow: 0px 0px 6px 7px rgba(64, 11, 78, 0.8);
   transition: box-shadow 0.3s ease;
-  margin-right: 60px;
+  margin-right: 30px;
   margin-top: 40px;
   z-index: 2;
 
   &:hover {
     box-shadow: 0px 1px 9px 11px rgba(64, 11, 78, 1);
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    height: auto;
+    padding: 30px 15px 30px 15px;
+    font-size: 0.85rem;
   }
 }
 
@@ -46,6 +53,8 @@
   margin-top: 15px;
   width: 100%;
   font-weight: bold;
+  row-gap: 10px;
+  column-gap: 5px;
 }
 
 .tag {

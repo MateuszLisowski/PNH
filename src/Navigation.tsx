@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
+import { useState } from "react";
+import { cx } from "./utils/classnames";
 
 const Logo = () => (
   <svg
@@ -48,6 +50,33 @@ const Logo = () => (
 );
 
 export const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const links = (
+    <>
+      <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+        O nas
+      </Link>
+      <Link to="/offer" onClick={() => setIsMenuOpen(false)}>
+        Oferta
+      </Link>
+      {/* <Link to="/shop" onClick={() => setIsMenuOpen(false)}>Sklep</Link> */}
+      <Link to="/voucher" onClick={() => setIsMenuOpen(false)}>
+        Vinyl Voucher
+      </Link>
+      <Link to="/events" onClick={() => setIsMenuOpen(false)}>
+        Wydarzenia
+      </Link>
+      <Link to="/past-events" onClick={() => setIsMenuOpen(false)}>
+        Archiwum
+      </Link>
+      {/* <Link to="/pnh-collective" onClick={() => setIsMenuOpen(false)}>PNH Kolektyw</Link> */}
+      <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+        Kontakt
+      </Link>
+    </>
+  );
+
   return (
     <nav className={styles.navigation}>
       <div>
@@ -55,15 +84,25 @@ export const Navigation = () => {
           <Logo />
         </Link>
       </div>
-      <div>
-        <Link to="/about">O nas</Link>
-        <Link to="/offer">Oferta</Link>
-        {/* <Link to="/shop">Sklep</Link> */}
-        <Link to="/voucher">Vinyl Voucher</Link>
-        <Link to="/events">Wydarzenia</Link>
-        <Link to="/past-events">Archiwum</Link>
-        {/* <Link to="/pnh-collective">PNH Kolektyw</Link> */}
-        <Link to="/contact">Kontakt</Link>
+      <div className={styles.links}>{links}</div>
+      <div className={cx([styles.sidebar, { [styles.active]: isMenuOpen }])}>
+        <span
+          className={styles.close}
+          onClick={() => setIsMenuOpen(false)}
+          role="button"
+        >
+          &#10005;
+        </span>
+        {links}
+      </div>
+      <div
+        className={styles.menuToggle}
+        onClick={() => setIsMenuOpen(true)}
+        role="button"
+      >
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
       </div>
     </nav>
   );
