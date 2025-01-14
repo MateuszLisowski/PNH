@@ -10,6 +10,7 @@ import { Events } from "./pages/Events";
 import { NotFound } from "./pages/NotFound";
 // import { Collective } from "./pages/Collective";
 import { PastEvents } from "./pages/PastEvents";
+import { Rent } from "./pages/Rent";
 // import { Shop } from "./pages/Shop";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/events" element={<Events />} />
             <Route path="/offer" element={<Offer />} />
-            <Route path="/rent" element={<></>} />
+            <Route path="/rent" element={<Rent />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/voucher" element={<Voucher />} />
             {/* <Route path="/shop" element={<Shop />} /> */}

@@ -18,7 +18,7 @@ export const Home = () => {
           <Link to="/offer" className={styles.linkButton}>
             Warsztaty
           </Link>
-          <Link to="/offer" className={styles.secondLink}>
+          <Link to="/events" className={styles.secondLink}>
             Wydarzenia
           </Link>
         </div>

@@ -1,7 +1,8 @@
 .sectionName {
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 70px;
+  color: var(--color-violet);
 
   @media (max-width: 768px) {
     font-size: 1.6rem;

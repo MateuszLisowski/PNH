@@ -60,6 +60,9 @@ export const Navigation = () => {
       <Link to="/offer" onClick={() => setIsMenuOpen(false)}>
         Oferta
       </Link>
+      <Link to="/rent" onClick={() => setIsMenuOpen(false)}>
+        Wynajem przestrzeni
+      </Link>
       {/* <Link to="/shop" onClick={() => setIsMenuOpen(false)}>Sklep</Link> */}
       <Link to="/voucher" onClick={() => setIsMenuOpen(false)}>
         Vinyl Voucher

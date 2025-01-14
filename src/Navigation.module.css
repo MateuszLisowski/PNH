@@ -49,13 +49,13 @@
     background-color: var(--color-violet);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: flex;
   }
 }
 
 .links {
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 }

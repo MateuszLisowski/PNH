@@ -18,14 +18,14 @@ export const About = () => {
       description:
         "DJ, animator kultury, twórca Projektu New Hope, jak i założyciel pierwszej szkoły DJ-skiej na Podlasiu. Przez ostatnią dekadę skupiony przede wszystkim na rozwoju podlaskiej sceny kulturalnej i klubowej. Jako menedżer współtworzył kultowe miejsca — kluby muzyczne FOMO i METRO przy ulicy Białówny 9/1.Mifi od najmłodszych lat dzieli się swoją fascynacją do sztuki DJ'ingu i płyt winylowych. Jego selekcja jest mocno za fundamentowana w Electro-Techno z Detroit i IDM. Eksperymentuje z muzyką Braindance i Acid żonglując różnorodnymi sekwencjami perkusyjnymi.",
       foto: hubertFoto,
-      tags: ["#lekcje-indwidualne", "#lekcje-grupowe"],
+      tags: ["#lekcjeindwidualne", "#lekcjegrupowe"],
     },
     {
       nick: "Frankee / Karol Daniłowicz",
       description:
-        "Kolekcjoner winyli i aktywny DJ od 1999 roku. Zafascynowany muzyką elektroniczną od 1991 roku, gdy otrzymał kasetę z koncertem Jean Michela Jarre’a. Po audycji Technikum Mechanizacji Muzyki kupił pierwsze odtwarzacze, mikser i gramofony, zaczynając miksowanie. Organizator undergroundowych imprez w Poznaniu, Toruniu, Bydgoszczy i Białymstoku. W Białymstoku znany z cyklicznych wieczorów „Miękka Soffa”, rezydentury w klubie Metro (Gorączka Czwartkowej Nocy, House Of Metro) oraz występów w lokalnych klubach. Prowadzi warsztaty DJ i nadal gra w Białostockich klubach.",
+        "Kolekcjoner płyt winylowych i od 1999 roku aktywny dj. Z muzyką elektroniczną pierwszy raz zetknął się w 1991 roku, kiedy od ojca dostał kasetę z koncertem Jean Michela Jarre’a. Kilka lat później, zafascynowany audycją Technikum Mechnizacji Muzyki w popularnej ogólnopolskiej stacji radiowej, kupił pierwsze profesjonalne odtwarzacze i mikser didżejski, potem gramofony i zaczął ćwiczyć miksowanie. Organizator undergroundowych imprez w Poznaniu, Toruniu i Bydgoszczy. W Białymstoku, znany zarówno z organizowania imprez w lokalnych klubach, cyklicznych wieczorów z muzyką elektroniczną, acid jazzową „Miękka Soffa”, jak również z wieloletniej rezydentury w klubie Metro: Gorączka Czwartkowej Nocy, House Of Metro. Dziś nadal można go spotkać za gramofonami w Białostockich klubach jak i podczas warsztatów / kursów dj.",
       foto: frankeeFoto,
-      tags: ["#lekcje-grupowe"],
+      tags: ["#lekcjegrupowe"],
     },
   ];
 
@@ -60,10 +60,6 @@ export const About = () => {
         </section>
         <section id="partnership">
           <h2 className={styles.sectionTitle}>Partnerzy</h2>
-          <article className={cx([styles.sectionText, styles.rowFlex])}>
-            <span className={aboutStyles.logo}>{technicsLogo}</span>
-            <span className={aboutStyles.logo}>{nativeInstrumentsLogo}</span>
-          </article>
           <article className={styles.sectionText}>
             <p className={styles.text}>
               Projekt New Hope posiada sprawdzone kooperacje z uznanymi markami,
@@ -79,11 +75,12 @@ export const About = () => {
               uczestników wydarzeń Projektu i community promującego działania
               PNH.
             </p>
-            <div style={{ margin: "50px 0 40px 0" }}>
+            <div style={{ margin: "50px 0 100px 0" }}>
               <Link to="../contact#info" className={homeStyles.linkButton}>
                 Zostań naszym partnerem!
               </Link>
             </div>
+            <div className={aboutStyles.logo}>{technicsLogo}</div>
             <p className={styles.text}>
               Dzięki współpracy z najbardziej uznaną marką w branży muzycznej
               <span style={{ fontWeight: "bold" }}> Technics</span> jesteśmy
@@ -91,6 +88,9 @@ export const About = () => {
               Wspólnie realizujemy edukacyjne materiały wideo o tematyce
               muzycznej w ramach serii Technics DJ Academy.
             </p>
+            <div className={aboutStyles.logo} style={{ margin: "40px 0" }}>
+              {nativeInstrumentsLogo}
+            </div>
             <p className={styles.text}>
               Współpraca z firmą, która wyznacza standardy cyfrowego DJ-ingu
               owocuje regularną aktualizacją sprzętową. Urządzenia takie jak
@@ -115,11 +115,16 @@ export const About = () => {
         </article>
         <h2 className={styles.sectionTitle}>Członkowie stowarzyszenia</h2>
         <article className={styles.sectionText}>
-          <p className={styles.smallText}>Hubert O. Marcinkiewicz</p>
-          <p className={styles.smallText}>Mateusz Lisowski</p>
+          <p className={styles.smallText}>
+            Hubert O. Marcinkiewicz - Prezes Stowarzyszenia
+          </p>
           <p className={styles.smallText}>Aneta Lisowska</p>
+          <p className={styles.smallText}>Anna Łaskarzewska</p>
+          <p className={styles.smallText}>Bartek Matuszek</p>
+          <p className={styles.smallText}>Jędrzej Dondziło</p>
           <p className={styles.smallText}>Karol Daniłowicz</p>
-          <p className={styles.smallText}>Ania Łaskarzewska</p>
+          <p className={styles.smallText}>Mateusz Lisowski</p>
+          <p className={styles.smallText}>Szymon Klimowicz</p>
         </article>
       </SubpageLayout>
     </main>

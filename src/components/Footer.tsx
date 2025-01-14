@@ -31,7 +31,7 @@ export const Footer = () => {
       links: [
         {
           name: "TikTok",
-          link: "https://www.youtube.com/@ProjektNewHope",
+          link: "https://www.tiktok.com/@projektnewhope",
           logo: tiktokLogo,
           target: "_blank",
         },
@@ -78,7 +78,7 @@ export const Footer = () => {
         { name: "Cennik", link: "./offer#services", logo: "", target: "_self" },
         {
           name: "Wynajem przestrzeni",
-          link: "./offer#rent",
+          link: "./rent",
           logo: "",
           target: "_self",
         },

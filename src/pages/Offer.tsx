@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Services } from "../components/Services";
 import { Workshops } from "../components/Workshops";
 import styles from "../Reusable.module.css";
-import homeStyles from "./Home.module.css";
 
 export const Offer = () => {
   useScrollToSection();
@@ -88,6 +87,20 @@ export const Offer = () => {
                     detail:
                       "Cena: 1500 zł (możliwość płatności w 2 ratach po 750 zł)",
                   },
+                  {
+                    detail: (
+                      <>
+                        Program kursu
+                        <Link
+                          to="../offer/beginner-class-program"
+                          className={styles.link}
+                          style={{ marginLeft: "5px" }}
+                        >
+                          sprawdź tutaj
+                        </Link>
+                      </>
+                    ),
+                  },
                 ],
               },
               {
@@ -100,6 +113,9 @@ export const Offer = () => {
                   {
                     detail: "Cena: Indywidualny - 500 zł, dla 2 osób - 800 zł",
                   },
+                  {
+                    detail: "Program kurs - indywidualny",
+                  },
                 ],
               },
               {
@@ -110,21 +126,24 @@ export const Offer = () => {
                   { detail: "Czas trwanie kursu: 2 dni" },
                   { detail: "Czas trwania zajęć: 150 minut" },
                   {
-                    detail: "Cena: Indywidulany - 600zł, dla 2 osób - 1000 zł",
+                    detail: "Cena: Indywidulany - 600zł , dla 2 osób - 1000 zł",
+                  },
+                  {
+                    detail: "Program kurs - indywidualny",
                   },
                 ],
               },
             ]}
           />
           <Workshops
-            sectionName="Kursy na poziomie średniozaawansowanym i zaawansowanym"
-            subtitle="Zajęcia skierowane do osób, które ukończyły kurs podstawowy oraz osób z podstawową lub średnio zaawansowaną wiedzą"
+            sectionName="Kursy na poziomie średniozaawansowanym"
+            subtitle="Zajęcia skierowane do osób, które ukończyły kurs podstawowy lub z podstawową / średnio zaawansowaną wiedzą"
             services={[
               {
                 title: "Kurs DJ-ski - Grupowy",
                 offer: [
                   { detail: "Kontynuacja po zakończeniu kursu podstawowego" },
-                  { detail: "Pozion: Średniozaawansowany" },
+                  { detail: "Poziom: Średniozaawansowany" },
                   { detail: "Dedykowany dla osób: 16 +" },
                   { detail: "Czas trwania kursu: 8 spotkań" },
                   { detail: "Czas trwania zajęć: 150 min." },
@@ -142,7 +161,7 @@ export const Offer = () => {
                 title: "Kurs DJ-ski - Indywidualny",
                 offer: [
                   { detail: "Kontynuacja po zakończeniu kursu podstawowego" },
-                  { detail: "Pozion: Średniozaawansowany" },
+                  { detail: "Poziom: Średniozaawansowany" },
                   { detail: "Dedykowany dla osób: 10 +" },
                   { detail: "Czas trwania kursu: 8 spotkań" },
                   { detail: "Czas trwania zajęć: 90 min." },
@@ -156,47 +175,45 @@ export const Offer = () => {
                   },
                 ],
               },
-              {
-                title: "Warsztaty DJ-skie - Grupowe",
-                offer: [
-                  { detail: "Poziom: Zaawansowany" },
-                  { detail: "Dedykowany dla osób: 16 +" },
-                  { detail: "Czas trwania kursu: bezterminowo" },
-                  { detail: "Czas trwania zajęć: 120 min." },
-                  { detail: "Częstotliwość zajęć: 1 spotkanie na tydzień" },
-                  { detail: "Cena: 250 zł" },
-                ],
-              },
             ]}
           />
-          <Workshops
-            sectionName=""
-            subtitle=""
-            services={[
-              {
-                title: "Warsztaty uzupełniające",
-                offer: [
-                  {
-                    detail:
-                      "Dla osób, które pragną poszerzyć swoją wiedzę i umiejętności w wybranych zagadnieniach związanych z DJ-ingiem",
-                  },
-                  {
-                    detail:
-                      "Możliwość zorganizowania warsztatów indywidualnych lub grupowych",
-                  },
-                  {
-                    detail:
-                      "Zakres tematyczny: warsztaty mogą obejmować dowolne zagadnienia zaproponowane przez uczestnika",
-                  },
-                  { detail: "Czas trwania i cena: ustalane indywidualnie" },
-                  {
-                    detail:
-                      "Zgłoszenia: prosimy przesyłać na adres: projektnewhope.warsztaty@gmail.com, z dopiskiem „Warsztaty uzupełniające”",
-                  },
-                ],
-              },
-            ]}
-          />
+          <div style={{ marginTop: "100px" }}>
+            <Workshops
+              sectionName="Warsztaty uzupełniające"
+              subtitle=""
+              services={[
+                {
+                  title: "Szczegóły:",
+                  offer: [
+                    {
+                      detail:
+                        "Dla osób, które pragną poszerzyć swoją wiedzę i umiejętności w wybranych zagadnieniach związanych z DJ-ingiem",
+                    },
+                    {
+                      detail:
+                        "Możliwość zorganizowania warsztatów indywidualnych lub grupowych",
+                    },
+                    {
+                      detail:
+                        "Zakres tematyczny: warsztaty mogą obejmować dowolne zagadnienia zaproponowane przez uczestnika",
+                    },
+                    { detail: "Czas trwania i cena: ustalane indywidualnie" },
+                    {
+                      detail:
+                        "Zgłoszenia: prosimy przesyłać na adres: projektnewhope.warsztaty@gmail.com, z dopiskiem „Warsztaty uzupełniające”",
+                    },
+                    {
+                      detail: (
+                        <Link className={styles.link} to="../contact">
+                          Kontakt
+                        </Link>
+                      ),
+                    },
+                  ],
+                },
+              ]}
+            />
+          </div>
         </section>
         <h2 id="lessons" className={styles.sectionTitle}>
           Lekcje indywidualne
@@ -219,7 +236,7 @@ export const Offer = () => {
                   },
                   {
                     detail:
-                      "Praca z profesjonalnym sprzętem – uczysz się na najlepszym sprzęcie DJ-skim i muzycznym dostępnym w naszej szkole.",
+                      "Praca z profesjonalnym sprzętem o standardzie klubowym.",
                   },
                   {
                     detail:
@@ -244,32 +261,11 @@ export const Offer = () => {
                   },
                   {
                     detail:
-                      "Dla średniozaawansowanych, którzy chcą poprawić swoją technikę miksowania i opanować nowe style.",
+                      "Dla średniozaawansowanych, którzy chcą poprawić swoją technikę miksowania",
                   },
                   {
                     detail:
-                      "Dla profesjonalistów, którzy pragną zgłębić zaawansowane techniki, takie jak scratching, harmoniczne miksowanie czy budowa setów tematycznych.",
-                  },
-                ],
-              },
-              {
-                title: "Tematy, które możesz zgłębiać:",
-                offer: [
-                  { detail: "Podstawy obsługi sprzętu DJ-skiego." },
-                  { detail: "Mixowanie i crossfading." },
-                  { detail: "Harmoniczne przejścia między utworami." },
-                  {
-                    detail:
-                      "Tworzenie setów muzycznych pod kątem konkretnej publiczności lub wydarzenia.",
-                  },
-                  {
-                    detail:
-                      "Zaawansowane techniki DJ-skie (np. scratching, looping).",
-                  },
-                  { detail: "Budowanie własnego stylu i marki jako DJ." },
-                  {
-                    detail:
-                      "Tworzenie social media i promocja swojej działalności.",
+                      "Dla profesjonalistów, którzy pragną zgłębić zaawansowane techniki",
                   },
                 ],
               },
@@ -278,7 +274,7 @@ export const Offer = () => {
                 offer: [
                   {
                     detail:
-                      "Maksymalne skupienie na Twoim rozwoju i Twoich potrzebach.",
+                      "Maksymalne skupienie na Twoim rozwoju i potrzebach.",
                   },
                   {
                     detail:
@@ -293,43 +289,8 @@ export const Offer = () => {
             ]}
           />
           <p className={styles.text}>
-            Zapraszamy do rezerwacji lekcji i rozpoczęcia muzycznej przygody,
-            która może otworzyć drzwi do kariery DJ-a! 🎧
+            Zapraszamy do rezerwacji lekcji i rozpoczęcia muzycznej przygody! 🎧
           </p>
-        </section>
-        <section className={styles.sectionText}>
-          <h2 id="rent" className={styles.sectionTitle}>
-            Wynajem przestrzeni
-          </h2>
-          <p className={styles.text}>Zapraszamy do naszej przestrzeni!</p>
-          <p className={styles.text}>
-            Wynajmij przestrzeń Projektu New Hope na swoje prywatne, firmowe lub
-            publiczne wydarzenie. Oferta jest skierowana również do osób, które
-            cyklicznie chcą wynająć salę lub cały lokal na poczet prywatnych
-            lekcji czy spotkań. Jest to również atrakcyjna oferta dla
-            nauczycieli (na przykład tańca, śpiewu, pianina), którzy szukają
-            przestrzeni do przeprowadzania zajęć z uczniami a potrzebują
-            przestrzeni.
-          </p>
-          <p className={styles.text}>
-            Lokal, to niespełna 120 metrów kwadratowych z 3 oddzielnymi
-            pomieszczeniami, wspólną toaletą i magazynem roboczym. Miejsce jest
-            w pełni wyposażone w wygodne umeblowanie, autorskie dekoracje i
-            sprzęt audio. Jesteśmy w stanie zaoferować niezbędną obsługę na dany
-            wynajem. Możemy zapewnić Państwu: profesjonalną ochronę, dźwiękowca,
-            realizatora świateł, catering, bar, fotograf czy biletera.
-          </p>
-          <p className={styles.text}>
-            Cena wynajmu jest ustalana indywidualnie bazująć na zapotrzebowaniu
-            klienta. Swoje zapytanie prosimy wysłać przy pomocy formularza lub
-            zapraszamy do kontaktu telefonicznego. Na podstawie odpowiedzi
-            przygotujemy indywidualną ofertę w ciągu 2 dni roboczych.
-          </p>
-          <div style={{ margin: "50px 0 40px 0" }}>
-            <Link to="../contact#info" className={homeStyles.linkButton}>
-              Formularz do wynajmu
-            </Link>
-          </div>
         </section>
         <section className={styles.sectionText}>
           <h2 id="services" className={styles.sectionTitle}>
