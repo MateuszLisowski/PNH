@@ -6,6 +6,7 @@ import styles from "./Events.module.css";
 import collage from "../assets/images";
 import { useState, useEffect } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { useScrollToSection } from "../utils/useScrollToSection";
 
 export const Events = () => {
   const events = [
@@ -61,6 +62,8 @@ export const Events = () => {
 
     loadImages();
   }, []);
+
+  useScrollToSection();
 
   return (
     <main className={reusableStyles.sectionText}>

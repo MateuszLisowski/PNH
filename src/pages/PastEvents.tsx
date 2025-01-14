@@ -3,6 +3,7 @@ import { SubpageLayout } from "../components/SubpageLayout";
 import styles from "./PastEvents.module.css";
 import images from "../assets/past-events";
 import { useState, useEffect } from "react";
+import { useScrollToSection } from "../utils/useScrollToSection";
 
 export const PastEvents = () => {
   const [imagePaths, setImagePaths] = useState<string[]>([]);
@@ -20,6 +21,8 @@ export const PastEvents = () => {
 
     loadImages();
   }, []);
+
+  useScrollToSection();
 
   return (
     <main className={reusableStyles.sectionText}>
