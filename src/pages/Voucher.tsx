@@ -24,7 +24,7 @@ export const Voucher = () => {
           <section className={styles.content}>
             <div className={styles.textContainer}>
               <p className={reusableStyles.text}>
-                Marzysz o spróbowaniu DJ-owania, ale nie wiesz czy to dla
+                Marzysz o spróbowaniu przygody z DJ-ką, ale nie wiesz czy to dla
                 Ciebie?
               </p>
               <p className={reusableStyles.text}>
@@ -43,14 +43,12 @@ export const Voucher = () => {
               </p>
 
               <p className={reusableStyles.text}>
-                Warsztaty prowadzą DJ-e z wieloletnim doświadczeniem zdobywanym
-                na największych scenach i najlepszych klubach w Polsce i
-                Europie.
+                Warsztaty prowadzą DJ-e z wieloletnim doświadczeniem.
               </p>
               <p className={reusableStyles.text}>
-                W trakcie zajęć w praktyce skorzystasz z profesjonalnego
-                sprzętu, jaki używany jest przez profesjonalnych DJ-ów i poznasz
-                tajniki miksowania i układania setów.
+                W trakcie zajęć w skorzystasz z profesjonalnego sprzętu, jaki
+                używany jest przez profesjonalnych DJ-ów i poznasz tajniki
+                miksowania i układania setów.
               </p>
               <p className={reusableStyles.littleText}>
                 * W warsztatach mogą wziąć udział również dzieci od 12 roku
@@ -63,10 +61,10 @@ export const Voucher = () => {
             <img src={bgVoucher} alt="tło voucher" className={styles.image} />
             <div className={styles.textContainer}>
               <p className={reusableStyles.text}>
-                Vinyl Voucher możesz kupić przy pomocy poniższego formularzaa,
+                Vinyl Voucher możesz kupić przy pomocy poniższego formularza.
               </p>
               <p className={reusableStyles.text}>
-                Wybierz rodzaj: podstawowy / rozszerzony / zaawansowany (
+                Wybierz rodzaj: podstawowy / rozszerzony (
                 <Link to="../voucher#details" className={reusableStyles.link}>
                   zobacz szczegóły &darr;)
                 </Link>
@@ -75,7 +73,11 @@ export const Voucher = () => {
                 rabatowy jeśli posiadasz i zapłać wygodnie online.
               </p>
               <div style={{ margin: "50px 0 40px 0" }}>
-                <Link to="#Todo" className={homeStyles.linkButton}>
+                <Link
+                  to="https://forms.gle/9P2ouooeziDgCa777"
+                  target="_blank"
+                  className={homeStyles.linkButton}
+                >
                   Zamawiam voucher
                 </Link>
               </div>
@@ -118,20 +120,6 @@ export const Voucher = () => {
                         {
                           detail: "beatmatching i podstawy miksowania utworów ",
                         },
-                        {
-                          detail: (
-                            <div>
-                              atrakcyjna zniżka na kontynuacje nauki w szkole -
-                              <Link
-                                to="../offer#workshops"
-                                className={reusableStyles.link}
-                              >
-                                {" "}
-                                sprawdź naszą ofertę
-                              </Link>
-                            </div>
-                          ),
-                        },
                         { detail: "dyplom ukończenia" },
                       ],
                       title: "Co w środku?",
@@ -146,7 +134,7 @@ export const Voucher = () => {
               <div className={styles.section}>
                 <TagPrice
                   title="Vinyl voucher - warsztat rozszerzony"
-                  price="200 zł"
+                  price="350 zł"
                 />
                 <Workshops
                   services={[
@@ -169,20 +157,6 @@ export const Voucher = () => {
                         {
                           detail: "beatmatching i techniki miksowania utworów",
                         },
-                        {
-                          detail: (
-                            <div>
-                              atrakcyjna zniżka na kontynuacje nauki szkole -
-                              <Link
-                                to="../offer#workshops"
-                                className={reusableStyles.link}
-                              >
-                                {" "}
-                                sprawdź naszą ofertę
-                              </Link>
-                            </div>
-                          ),
-                        },
                         { detail: "dyplom ukończenia" },
                       ],
                       title: "Co w środku?",
@@ -192,63 +166,6 @@ export const Voucher = () => {
                 <p>
                   Po warsztacie będziesz mieć podstawową wiedzę niezbędną do
                   nagrania swojego pierwszego seta
-                </p>
-              </div>
-              <div className={styles.section}>
-                <TagPrice
-                  title="Vinyl voucher - Warsztat zaawansowany"
-                  price="550 zł"
-                />
-                <Workshops
-                  services={[
-                    {
-                      offer: [
-                        { detail: "czas trwania: 360 minut" },
-                        { detail: "kameralna grupa - max. 4 osób" },
-                        {
-                          detail:
-                            "idealny na start od zera, głębsze poznanie świata DJskiego i zdobycie praktycznych umiejętności",
-                        },
-                        {
-                          detail:
-                            "zaawansowana wiedza o sprzęcie DJskim i jego podłączeniu",
-                        },
-                        {
-                          detail:
-                            "zaawansowana wiedza o oprogramowaniu DJskim, układaniu setów i konfiguracji",
-                        },
-                        {
-                          detail:
-                            "nauka rozpoznawania fraz, bitów i struktury utworu",
-                        },
-                        {
-                          detail:
-                            "beatmatching, techniki miksowania utworów i ciekawe łączenie gatunków",
-                        },
-                        {
-                          detail: (
-                            <div>
-                              atrakcyjna zniżka na kontynuacje nauki szkole -
-                              <Link
-                                to="../offer#workshops"
-                                className={reusableStyles.link}
-                              >
-                                {" "}
-                                sprawdź naszą ofertę
-                              </Link>
-                            </div>
-                          ),
-                        },
-                        { detail: "dyplom ukończenia" },
-                      ],
-                      title: "Co w środku?",
-                    },
-                  ]}
-                />
-                <p>
-                  Po warsztacie będziesz mieć podstawową wiedzę niezbędną do
-                  nagrania swojego pierwszego seta i przygotowania się do
-                  występu przed publicznością
                 </p>
               </div>
             </div>

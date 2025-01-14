@@ -2,6 +2,10 @@ import reusableStyles from "../Reusable.module.css";
 import { SingleEvent } from "../components/SingleEvent";
 import { SubpageLayout } from "../components/SubpageLayout";
 import eventImage from "../assets/event-image.jpg";
+import anotherEventImage from "../assets/collage/340746994_610941687276072_741370566768146264_n.jpg";
+import eventImageAnother from "../assets/collage/469484396_548290871340620_1492743414641544960_n.jpg";
+import evImage from "../assets/collage/470173999_551973430972364_1352481696693358873_n.jpg";
+import image from "../assets/collage/469477871_548289398007434_2425966841379945318_n.jpg";
 import styles from "./Events.module.css";
 import collage from "../assets/images";
 import { useState, useEffect } from "react";
@@ -15,35 +19,35 @@ export const Events = () => {
       title: "New Hope: ELEKTRO TEMPO",
       date: "25.01.2025",
       place: "Piwnica Projektu New Hope / Wyszyńskiego 6A/07",
-      link: "/",
+      link: "",
     },
     {
-      foto: eventImage,
+      foto: anotherEventImage,
       title: "New Hope: This is my House",
       date: "15.02.2025",
       place: "Piwnica Projektu New Hope / Wyszyńskiego 6A/07",
-      link: "/",
+      link: "",
     },
     {
-      foto: eventImage,
+      foto: eventImageAnother,
       title: "New Hope: MOTOR CITY",
       date: "15.03.2025",
       place: "Piwnica Projektu New Hope / Wyszyńskiego 6A/07",
-      link: "/",
+      link: "",
     },
     {
-      foto: eventImage,
+      foto: evImage,
       title: "New Hope pres. Debiuty",
       date: "12.04.2025",
       place: "Piwnica Projektu New Hope / Wyszyńskiego 6A/07",
-      link: "/",
+      link: "",
     },
     {
-      foto: eventImage,
+      foto: image,
       title: "New Hope: WIELKANOC",
       date: "20.04.2025",
       place: "Kawiarnia Muzyczna FAMA",
-      link: "/",
+      link: "",
     },
   ];
 

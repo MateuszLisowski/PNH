@@ -16,6 +16,7 @@ const scrollToSection = (hash: string) => {
         behavior: "smooth",
       });
       // TODO: after scroll remove hash from url
+      // TODO: after enter from route LINK to another fpage dont preserve scroll
     } else {
       throw new Error(`Element with id ${elementId} not found`);
     }
@@ -26,14 +27,7 @@ export const useScrollToSection = () => {
   const { hash } = useLocation();
 
   useEffect(() => {
-    if (!hash) {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    } else {
-      scrollToSection(hash);
-    }
+    scrollToSection(hash);
   }, [hash]);
 
   return null;

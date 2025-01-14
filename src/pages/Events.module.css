@@ -16,4 +16,5 @@
   height: 100%;
   object-fit: cover;
   border: 5px solid var(--color-light);
+  object-fit: cover;
 }

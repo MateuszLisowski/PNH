@@ -37,7 +37,11 @@ export const Rent = () => {
             przygotujemy indywidualną ofertę w ciągu 2 dni roboczych.
           </p>
           <div style={{ margin: "50px 0 40px 0" }}>
-            <Link to="../contact#info" className={homeStyles.linkButton}>
+            <Link
+              to="https://forms.gle/kfyYDKnfT9BjrwpGA"
+              className={homeStyles.linkButton}
+              target="_blank"
+            >
               Formularz do wynajmu
             </Link>
           </div>
