@@ -65,7 +65,10 @@ export const Voucher = () => {
               </p>
               <p className={reusableStyles.text}>
                 Wybierz rodzaj: podstawowy / rozszerzony (
-                <Link to="../voucher#details" className={reusableStyles.link}>
+                <Link
+                  to="../vinyl-voucher#szczegoly"
+                  className={reusableStyles.link}
+                >
                   zobacz szczegóły &darr;)
                 </Link>
                 , uzupełnij dane osoby kupującej (jeśli to voucher na prezent -
@@ -95,7 +98,7 @@ export const Voucher = () => {
               </p>
             </div>
           </section>
-          <section className={styles.content} id="details">
+          <section className={styles.content} id="szczegoly">
             <h2 className={reusableStyles.sectionTitle}>Rodzaje voucherów</h2>
             <div className={styles.content}>
               <div className={styles.section}>

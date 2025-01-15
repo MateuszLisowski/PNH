@@ -10,7 +10,7 @@ export const Rent = () => {
   return (
     <main className={styles.sectionText}>
       <SubpageLayout>
-        <h1 id="rent" className={styles.sectionTitle}>
+        <h1 id="wynajem" className={styles.sectionTitle}>
           Wynajem przestrzeni
         </h1>
         <section className={styles.sectionText}>

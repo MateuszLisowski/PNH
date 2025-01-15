@@ -20,17 +20,17 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/offer" element={<Offer />} />
-            <Route path="/rent" element={<Rent />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/voucher" element={<Voucher />} />
+            <Route path="/o-nas" element={<About />} />
+            <Route path="/wydarzenia" element={<Events />} />
+            <Route path="/oferta" element={<Offer />} />
+            <Route path="/wynajem" element={<Rent />} />
+            <Route path="/kontakt" element={<Contact />} />
+            <Route path="/vinyl-voucher" element={<Voucher />} />
             {/* <Route path="/shop" element={<Shop />} /> */}
             {/* <Route path="/pnh-collective" element={<Collective />} /> */}
-            <Route path="/past-events" element={<PastEvents />} />
+            <Route path="/archiwum-wydarzen" element={<PastEvents />} />
             <Route
-              path="/offer/beginner-class-program"
+              path="/oferta/program-kurs-podstawowy"
               element={<BeginnerClassProgram />}
             />
             <Route path="*" element={<NotFound />} />

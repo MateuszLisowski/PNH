@@ -15,10 +15,10 @@ export const Home = () => {
           rozwijać swoje pasje i umiejętności
         </h2>
         <div className={styles.buttons}>
-          <Link to="/offer" className={styles.linkButton}>
+          <Link to="/oferta" className={styles.linkButton}>
             Warsztaty
           </Link>
-          <Link to="/events" className={styles.secondLink}>
+          <Link to="/wydarzenia" className={styles.secondLink}>
             Wydarzenia
           </Link>
         </div>

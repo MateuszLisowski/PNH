@@ -18,7 +18,7 @@ export const Offer = () => {
             indywidualne skierowane do każdej grupy wiekowej. Oferujemy również
             szereg usług (
             {
-              <Link to="../offer#services" className={styles.link}>
+              <Link to="../oferta#cennik" className={styles.link}>
                 cennik
               </Link>
             }
@@ -29,14 +29,14 @@ export const Offer = () => {
             lub chęci zapisania się na zajęcia prosimy o kontakt telefoniczny
             lub mailowy -{" "}
             {
-              <Link to="../contact#info" className={styles.link}>
+              <Link to="../kontakt#info" className={styles.link}>
                 kontakt
               </Link>
             }
             . Postaramy się spełnić Twoje oczekiwania.
           </p>
         </section>
-        <h2 id="workshops" className={styles.sectionTitle}>
+        <h2 id="warsztaty" className={styles.sectionTitle}>
           Warsztaty DJ-skie
         </h2>
         <section className={styles.sectionText}>
@@ -62,7 +62,7 @@ export const Offer = () => {
                       <>
                         Program kursu
                         <Link
-                          to="../offer/beginner-class-program"
+                          to="../oferta/program-kurs-podstawowy"
                           className={styles.link}
                           style={{ marginLeft: "5px" }}
                         >
@@ -92,7 +92,7 @@ export const Offer = () => {
                       <>
                         Program kursu
                         <Link
-                          to="../offer/beginner-class-program"
+                          to="../oferta/program-kurs-podstawowy"
                           className={styles.link}
                           style={{ marginLeft: "5px" }}
                         >
@@ -202,20 +202,13 @@ export const Offer = () => {
                       detail:
                         "Zgłoszenia: prosimy przesyłać na adres: projektnewhope.warsztaty@gmail.com, z dopiskiem „Warsztaty uzupełniające”",
                     },
-                    {
-                      detail: (
-                        <Link className={styles.link} to="../contact">
-                          Kontakt
-                        </Link>
-                      ),
-                    },
                   ],
                 },
               ]}
             />
           </div>
         </section>
-        <h2 id="lessons" className={styles.sectionTitle}>
+        <h2 id="lekcje-indywidualne" className={styles.sectionTitle}>
           Lekcje indywidualne
         </h2>
         <section className={styles.sectionText}>
@@ -293,7 +286,7 @@ export const Offer = () => {
           </p>
         </section>
         <section className={styles.sectionText}>
-          <h2 id="services" className={styles.sectionTitle}>
+          <h2 id="cennik" className={styles.sectionTitle}>
             Cennik
           </h2>
           <Services

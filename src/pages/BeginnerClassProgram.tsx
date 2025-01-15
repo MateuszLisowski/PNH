@@ -1,5 +1,5 @@
 import { SubpageLayout } from "../components/SubpageLayout";
-import warsztaty from "../assets/warsztaty.jpg";
+import warsztaty from "../assets/warsztaty-program.jpg";
 import styles from "./BeginnerClassProgram.module.css";
 import reusableStyles from "../Reusable.module.css";
 import { cx } from "../utils/classnames";
@@ -64,17 +64,17 @@ export const BeginnerClassProgram = () => {
             <p className={reusableStyles.text}>
               Zapraszamy Cię na fascynującą podróż w głąb świata DJ-ingu, gdzie
               nie tylko zgłębisz tajniki miksowania, ale też w pełni zrozumiesz
-              muzykę - nasz kurs to brama do niedostępnych dźwiękowych doznań.
-              Opanujesz sztukę miksowania muzyki, budowania emocji i tworzenia
-              niepowtarzalnego klimatu.
+              pracę, jaką wykonuje DJ - nasz kurs to brama do fascynujących
+              dźwiękowych doznań. Opanujesz technikalia użytego sprzętu, proces
+              tworzenia autorskiej biblioteki muzycznej i beatmaching, który
+              połączy Twoje pomysły w całość.
             </p>
             <p>
-              Wspólnie wkroczymy w świat, gdzie muzyka to język, a DJ jest jego
-              niezwykłym interpretatorem. Rozwiniesz umiejętność kreowania
-              muzycznych historii i nauczysz się sztuki opowiadania muzycznych
-              historii poruszających całym parkietem. Poznasz sekrety obcowania
-              w kulturze klubowej i jej trudnych zasad - wszystko to po to,
-              otworzyć Ci drzwi do startu kariery, albo super przygody.
+              W trakcie kursu nauczysz się grać na zestawie cyfrowym i
+              analogowym z użyciem płyt winylowych, które stoją u podstaw sztuki
+              DJ-ingu. Nasze warsztaty prowadzimy od wielu lat, a ponad 100
+              uczniów dotychczas ukończyła nasze kursy. Jesteśmy uznaną marką i
+              unikalną inicjatywą na skalę kraju.
             </p>
           </div>
           <img src={warsztaty} alt="Warsztaty" className={styles.image} />

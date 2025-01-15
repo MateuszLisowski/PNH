@@ -31,30 +31,29 @@ export const Contact = () => {
             className={cx([styles.sectionText, contactStyles.contactSection])}
           >
             <p className={styles.text}>
-              Telefon: <span className={styles.contact}>+48 530 546 016</span>
+              <span className={styles.contact}>+48 530 546 016</span>
             </p>
             <p className={styles.smallText}>
-              Email główny:{" "}
               <span className={styles.contact}>projektnewhope@gmail.com</span>
             </p>
             <p className={styles.text}>
-              Email Warsztaty:{" "}
               <span className={styles.contact}>
                 projektnewhope.warsztaty@gmail.com
               </span>
             </p>
-            <p className={styles.smallText}>Adres:</p>
-            <p className={styles.sectionText}>Wyszyńskiego 6A/07</p>
+            <p className={styles.sectionText}>
+              ul. Kardyła Stefana Wyszyńskiego 6A/07
+            </p>
             <p className={styles.sectionText}>15-888 Białystok</p>
           </section>
         </section>
         <section>
-          <h2 id="localization" className={styles.sectionTitle}>
+          <h2 id="lokalizacja" className={styles.sectionTitle}>
             Lokalizacja
           </h2>
           <p className={cx([styles.text, styles.sectionText])}>
             New Hope znajduje się w Białymstoku, nieopodal dworca PKS, przy
-            ulicy Wyszyńskiego. Obok sklepu Kometa. Samochód mozna zaparkować na
+            ulicy Wyszyńskiego, obok sklepu Kometa. Samochód można zaparkować na
             bezpłatnym parkingu za sklepem lub płatnym przy ulicy głównej.
             Wejście do lokalu znajduje się w prawej części rzemieślnika przy
             ulicy Wyszyńskiego 6A. Nasze miejsce usytuowane jest w podziemiach

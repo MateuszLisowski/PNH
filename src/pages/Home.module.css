@@ -16,7 +16,12 @@
   height: 500px;
   position: absolute;
   left: 0;
-  filter: brightness(0.5) saturate(0.4) grayscale(0.9);
+  filter: brightness(0.6) saturate(0.4) grayscale(0.9);
+
+  @media (max-width: 768px) {
+    filter: brightness(0.9) saturate(0.4) grayscale(0.9);
+    height: 365px;
+  }
 }
 
 .title {

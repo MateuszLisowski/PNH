@@ -54,27 +54,27 @@ export const Navigation = () => {
 
   const links = (
     <>
-      <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+      <Link to="/o-nas" onClick={() => setIsMenuOpen(false)}>
         O nas
       </Link>
-      <Link to="/offer" onClick={() => setIsMenuOpen(false)}>
+      <Link to="/oferta" onClick={() => setIsMenuOpen(false)}>
         Oferta
       </Link>
-      <Link to="/rent" onClick={() => setIsMenuOpen(false)}>
+      <Link to="/wynajem" onClick={() => setIsMenuOpen(false)}>
         Wynajem przestrzeni
       </Link>
       {/* <Link to="/shop" onClick={() => setIsMenuOpen(false)}>Sklep</Link> */}
-      <Link to="/voucher" onClick={() => setIsMenuOpen(false)}>
+      <Link to="/vinyl-voucher" onClick={() => setIsMenuOpen(false)}>
         Vinyl Voucher
       </Link>
-      <Link to="/events" onClick={() => setIsMenuOpen(false)}>
+      <Link to="/wydarzenia" onClick={() => setIsMenuOpen(false)}>
         Wydarzenia
       </Link>
-      <Link to="/past-events" onClick={() => setIsMenuOpen(false)}>
+      <Link to="/archiwum-wydarzen" onClick={() => setIsMenuOpen(false)}>
         Archiwum
       </Link>
       {/* <Link to="/pnh-collective" onClick={() => setIsMenuOpen(false)}>PNH Kolektyw</Link> */}
-      <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+      <Link to="/kontakt" onClick={() => setIsMenuOpen(false)}>
         Kontakt
       </Link>
     </>

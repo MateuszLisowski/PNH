@@ -44,7 +44,7 @@ export const About = () => {
             swoją przygodę ze sztuką DJ-ską.
           </p>
         </article>
-        <h2 id="teachers" className={styles.sectionTitle}>
+        <h2 id="nauczyciele" className={styles.sectionTitle}>
           Nauczyciele
         </h2>
         <section className={cx([styles.sectionText, styles.rowFlex])}>
@@ -58,7 +58,7 @@ export const About = () => {
             />
           ))}
         </section>
-        <section id="partnership">
+        <section id="partnerzy">
           <h2 className={styles.sectionTitle}>Partnerzy</h2>
           <article className={styles.sectionText}>
             <p className={styles.text}>
@@ -76,7 +76,7 @@ export const About = () => {
               PNH.
             </p>
             <div style={{ margin: "50px 0 100px 0" }}>
-              <Link to="../contact#info" className={homeStyles.linkButton}>
+              <Link to="../kontakt#info" className={homeStyles.linkButton}>
                 Zostań naszym partnerem!
               </Link>
             </div>

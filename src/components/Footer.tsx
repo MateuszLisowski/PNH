@@ -65,20 +65,25 @@ export const Footer = () => {
       links: [
         {
           name: "Warsztaty DJ-skie",
-          link: "./offer#workshops",
+          link: "./oferta#warsztaty",
           logo: "",
           target: "_self",
         },
         {
           name: "Lekcje indywidualne",
-          link: "./offer#lessons",
+          link: "./oferta#lekcje-indywidualne",
           logo: "",
           target: "_self",
         },
-        { name: "Cennik", link: "./offer#services", logo: "", target: "_self" },
+        {
+          name: "Cennik",
+          link: "./oferta#cennik",
+          logo: "",
+          target: "_self",
+        },
         {
           name: "Wynajem przestrzeni",
-          link: "./rent",
+          link: "./wynajem",
           logo: "",
           target: "_self",
         },
@@ -89,14 +94,14 @@ export const Footer = () => {
       links: [
         {
           name: "Jak dojechać",
-          link: "./contact/#localization",
+          link: "./kontakt/#lokalizacja",
           logo: "",
           target: "_self",
         },
-        { name: "Dane", link: "./about#info", logo: "", target: "_self" },
+        { name: "Dane", link: "./o-nas#info", logo: "", target: "_self" },
         {
           name: "Nauczyciele",
-          link: "./about#teachers",
+          link: "./o-nas#nauczyciele",
           logo: "",
           target: "_self",
         },
@@ -108,7 +113,7 @@ export const Footer = () => {
         },
         {
           name: "Zostań partnerem",
-          link: "./about#partnership",
+          link: "./o-nas#partnerzy",
           logo: "",
           target: "_self",
         },
