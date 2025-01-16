@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import { Home, Contact, About, Offer } from "./pages";
 import { Navigation } from "./Navigation";
 import { Layout } from "./components/Layout";
@@ -12,12 +17,28 @@ import { NotFound } from "./pages/NotFound";
 import { PastEvents } from "./pages/PastEvents";
 import { Rent } from "./pages/Rent";
 import ScrollToTop from "./utils/ScrollToTop";
+import { useEffect } from "react";
 // import { Shop } from "./pages/Shop";
+
+function RedirectHandler() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectPath = params.get("redirect");
+    if (redirectPath) {
+      navigate(redirectPath);
+    }
+  }, [navigate]);
+
+  return null;
+}
 
 function App() {
   return (
     <Router basename="/">
       <ScrollToTop />
+      <RedirectHandler />
       <div className={styles.body}>
         <Layout>
           <Routes>

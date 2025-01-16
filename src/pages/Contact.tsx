@@ -42,7 +42,7 @@ export const Contact = () => {
               </span>
             </p>
             <p className={styles.sectionText}>
-              ul. Kardyła Stefana Wyszyńskiego 6A/07
+              ul. Kardynała Stefana Wyszyńskiego 6A/07
             </p>
             <p className={styles.sectionText}>15-888 Białystok</p>
           </section>
