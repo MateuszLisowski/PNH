@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="refresh" content="0; URL='/'" />
+  <script>
+    const path = window.location.pathname;
+    const query = window.location.search;
+    const hash = window.location.hash;
+    window.location.replace(`/?redirect=${path}${query}${hash}`);
+  </script>
+</head>
+
+<body>
+  Redirecting...
+</body>
+
+</html>
