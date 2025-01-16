@@ -11,11 +11,13 @@ import { NotFound } from "./pages/NotFound";
 // import { Collective } from "./pages/Collective";
 import { PastEvents } from "./pages/PastEvents";
 import { Rent } from "./pages/Rent";
+import ScrollToTop from "./utils/ScrollToTop";
 // import { Shop } from "./pages/Shop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className={styles.body}>
         <Layout>
           <Routes>
