@@ -27,7 +27,7 @@ export const PastEvents = () => {
   return (
     <main className={reusableStyles.sectionText}>
       <SubpageLayout>
-        <h1 className={reusableStyles.sectionTitle}>To juz sie działo</h1>
+        <h1 className={reusableStyles.sectionTitle}>Archiwum wydarzeń</h1>
         <section className={styles.events}>
           {imagePaths.map((path, index) => (
             <img
