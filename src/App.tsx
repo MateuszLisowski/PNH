@@ -49,7 +49,7 @@ function App() {
             <Route path="/warsztaty" element={<Offer />} />
             <Route path="/wynajem" element={<Rent />} />
             <Route path="/kontakt" element={<Contact />} />
-            <Route path="/vinyl-voucher" element={<Voucher />} />
+            <Route path="/voucher" element={<Voucher />} />
             {/* <Route path="/shop" element={<Shop />} /> */}
             {/* <Route path="/pnh-collective" element={<Collective />} /> */}
             <Route path="/archiwum-wydarzen" element={<PastEvents />} />

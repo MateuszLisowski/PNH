@@ -107,7 +107,7 @@ export const Footer = () => {
         },
         {
           name: "Blog",
-          link: "https://www.djf.com.pl/blog",
+          link: "https://www.djf.com.pl/media",
           logo: "",
           target: "_blank",
         },

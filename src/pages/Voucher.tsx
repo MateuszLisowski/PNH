@@ -65,10 +65,7 @@ export const Voucher = () => {
               </p>
               <p className={reusableStyles.text}>
                 Wybierz rodzaj: podstawowy / rozszerzony (
-                <Link
-                  to="../vinyl-voucher#szczegoly"
-                  className={reusableStyles.link}
-                >
+                <Link to="../voucher#szczegoly" className={reusableStyles.link}>
                   zobacz szczegóły &darr;)
                 </Link>
                 , uzupełnij dane osoby kupującej (jeśli to voucher na prezent -
