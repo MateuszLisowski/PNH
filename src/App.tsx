@@ -46,6 +46,7 @@ function App() {
             <Route path="/o-nas" element={<About />} />
             <Route path="/wydarzenia" element={<Events />} />
             <Route path="/oferta" element={<Offer />} />
+            <Route path="/warsztaty" element={<Offer />} />
             <Route path="/wynajem" element={<Rent />} />
             <Route path="/kontakt" element={<Contact />} />
             <Route path="/vinyl-voucher" element={<Voucher />} />
