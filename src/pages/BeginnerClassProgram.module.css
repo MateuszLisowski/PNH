@@ -1,5 +1,6 @@
 .top {
   display: flex;
+  align-items: center;
 
   @media (max-width: 1280px) {
     flex-direction: column;

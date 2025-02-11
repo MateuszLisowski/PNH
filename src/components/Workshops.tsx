@@ -4,6 +4,7 @@ export const Workshops = ({
   services,
   sectionName,
   subtitle,
+  id,
 }: {
   services: {
     title: string;
@@ -11,10 +12,15 @@ export const Workshops = ({
   }[];
   sectionName?: string;
   subtitle?: string;
+  id?: string;
 }) => {
   return (
     <section className={styles.workshops}>
-      {sectionName && <h3 className={styles.sectionName}>{sectionName}</h3>}
+      {sectionName && (
+        <h3 className={styles.sectionName} id={id}>
+          {sectionName}
+        </h3>
+      )}
       {subtitle && <h4 className={styles.subtitle}>{subtitle}</h4>}
       {services.map(({ offer, title }) => (
         <>

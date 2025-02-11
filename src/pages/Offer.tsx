@@ -3,6 +3,9 @@ import { useScrollToSection } from "../utils/useScrollToSection";
 import { Link } from "react-router-dom";
 import { Services } from "../components/Services";
 import { Workshops } from "../components/Workshops";
+import warsztaty from "../assets/warsztaty-program.jpg";
+import beginnerClassStyles from "./BeginnerClassProgram.module.css";
+
 import styles from "../Reusable.module.css";
 
 export const Offer = () => {
@@ -12,50 +15,142 @@ export const Offer = () => {
     <main>
       <SubpageLayout>
         <section className={styles.sectionText}>
-          <p className={styles.text}>
-            Prowadzimy kursy i warsztaty DJ-skie stacjonarnie i wyjazdowo. W
-            naszej ofercie znajdziesz między innymi warsztaty grupowe i
-            indywidualne skierowane do każdej grupy wiekowej. Oferujemy również
-            szereg usług (
-            {
-              <Link to="../oferta#cennik" className={styles.link}>
-                cennik
-              </Link>
-            }
-            ).
-          </p>
-          <p className={styles.text}>
-            W razie pytań, spersonalizowanych usług niewymienionych w cenniku
-            lub chęci zapisania się na zajęcia prosimy o kontakt telefoniczny
-            lub mailowy -{" "}
-            {
-              <Link to="../kontakt#info" className={styles.link}>
-                kontakt
-              </Link>
-            }
-            . Postaramy się spełnić Twoje oczekiwania.
-          </p>
+          <h2 id="warsztaty" className={styles.sectionTitle}>
+            Warsztaty DJ-skie
+          </h2>
+          <div className={beginnerClassStyles.top}>
+            <div>
+              <p className={styles.text}>
+                Prowadzimy kursy i warsztaty DJ-skie stacjonarnie i wyjazdowo. W
+                naszej ofercie znajdziesz między innymi warsztaty grupowe i
+                indywidualne skierowane do każdej grupy wiekowej. Oferujemy
+                również szereg usług (
+                {
+                  <Link to="../oferta#cennik" className={styles.link}>
+                    cennik
+                  </Link>
+                }
+                ).
+              </p>
+              <p className={styles.text}>
+                W razie pytań, spersonalizowanych usług niewymienionych w
+                cenniku lub chęci zapisania się na zajęcia prosimy o kontakt
+                telefoniczny lub mailowy -{" "}
+                {
+                  <Link to="../kontakt#info" className={styles.link}>
+                    kontakt
+                  </Link>
+                }
+                . Postaramy się spełnić Twoje oczekiwania.
+              </p>
+              <Workshops
+                services={[
+                  {
+                    title: "Nasza oferta obejmuje:",
+                    offer: [
+                      {
+                        detail: (
+                          <p>
+                            Kursy DJ-skie dla początkujących (indywidualne /
+                            grupowe) &rarr;
+                            <Link
+                              to="../oferta#kursy-dj-dla-poczatkujacych"
+                              className={styles.link}
+                              style={{ marginLeft: "5px" }}
+                            >
+                              sprawdź szczegóły
+                            </Link>
+                          </p>
+                        ),
+                      },
+                      {
+                        detail: (
+                          <p>
+                            Warsztaty DJ-skie średniozaawansowane i zaawansowane
+                            (indywidualne / grupowe) &rarr;
+                            <Link
+                              to="../oferta#kursy-dj-dla-sredniozaawansowanych"
+                              className={styles.link}
+                              style={{ marginLeft: "5px" }}
+                            >
+                              sprawdź szczegóły
+                            </Link>
+                          </p>
+                        ),
+                      },
+                      {
+                        detail: (
+                          <p>
+                            Warsztaty uzupełniające (indywidualne) &rarr;
+                            <Link
+                              to="../oferta#warsztaty-uzupelniajace"
+                              className={styles.link}
+                              style={{ marginLeft: "5px" }}
+                            >
+                              sprawdź szczegóły
+                            </Link>
+                          </p>
+                        ),
+                      },
+                      {
+                        detail: (
+                          <p>
+                            Lekcje indwidualne &rarr;
+                            <Link
+                              to="../oferta#lekcje-indywidualne"
+                              className={styles.link}
+                              style={{ marginLeft: "5px" }}
+                            >
+                              sprawdź szczegóły
+                            </Link>
+                          </p>
+                        ),
+                      },
+                      {
+                        detail: (
+                          <p>
+                            Usługi DJ-skie &rarr;
+                            <Link
+                              to="../oferta#cennik"
+                              className={styles.link}
+                              style={{ marginLeft: "5px" }}
+                            >
+                              sprawdź szczegóły
+                            </Link>
+                          </p>
+                        ),
+                      },
+                    ],
+                  },
+                ]}
+              />
+            </div>
+
+            <img
+              src={warsztaty}
+              alt="Warsztaty"
+              className={beginnerClassStyles.image}
+            />
+          </div>
         </section>
-        <h2 id="warsztaty" className={styles.sectionTitle}>
-          Warsztaty DJ-skie
-        </h2>
+
         <section className={styles.sectionText}>
           <Workshops
             sectionName="Kursy na poziomie podstawowym"
+            id="kursy-dj-dla-poczatkujacych"
             services={[
               {
                 title: "Kurs DJ-ski - Grupowy",
                 offer: [
                   { detail: "Dedykowany dla osób 16 +" },
-                  { detail: "Czas trwanie kursu: 8 tygodni" },
+                  { detail: "Czas trwania kursu: 4/8 tygodni" },
                   { detail: "Czas trwania zajęć: 150 minut" },
                   {
                     detail:
                       "Częstotliwość zajęć: 1 spotkanie na tydzień w dni robocze",
                   },
                   {
-                    detail:
-                      "Cena: 1000 zł (możliwość płatności w 2 ratach po 500 zł)",
+                    detail: "Cena: 4 tygodnie - 500zł, 8 tygodni - 800zł",
                   },
                   {
                     detail: (
@@ -77,15 +172,14 @@ export const Offer = () => {
                 title: "Kurs DJ-ski - Indywidualny",
                 offer: [
                   { detail: "Dedykowany dla osób 10 +" },
-                  { detail: "Czas trwanie kursu: 8 tygodni" },
+                  { detail: "Czas trwania kursu: 4/8 tygodni" },
                   { detail: "Czas trwania zajęć: 90 minut" },
                   {
                     detail:
                       "Częstotliwość zajęć: 1 spotkanie na tydzień w dni robocze",
                   },
                   {
-                    detail:
-                      "Cena: 1500 zł (możliwość płatności w 2 ratach po 750 zł)",
+                    detail: "Cena: 4 tygodnie - 750zł, 8 tygodni - 1300zł",
                   },
                   {
                     detail: (
@@ -108,10 +202,10 @@ export const Offer = () => {
                   "Kurs DJ-ski - Przyśpieszony - 1 dniowy (indywidualny / dla 2 osób)",
                 offer: [
                   { detail: "Dedykowany dla osób 10 +" },
-                  { detail: "Czas trwanie kursu: 1 dzień" },
+                  { detail: "Czas trwania kursu: 1 dzień" },
                   { detail: "Czas trwania zajęć: 240 minut" },
                   {
-                    detail: "Cena: Indywidualny - 500 zł, dla 2 osób - 800 zł",
+                    detail: "Cena: Indywidualny - 500zł, dla 2 osób - 800zł",
                   },
                   {
                     detail: "Program kurs - indywidualny",
@@ -123,10 +217,10 @@ export const Offer = () => {
                   "Kurs DJ-ski - Przyśpieszony - 2 dniowy (indywidualny / dla 2 osób)",
                 offer: [
                   { detail: "Dedykowany dla osób 10 +" },
-                  { detail: "Czas trwanie kursu: 2 dni" },
+                  { detail: "Czas trwania kursu: 2 dni" },
                   { detail: "Czas trwania zajęć: 150 minut" },
                   {
-                    detail: "Cena: Indywidulany - 600zł , dla 2 osób - 1000 zł",
+                    detail: "Cena: Indywidulany - 600zł , dla 2 osób - 1000zł",
                   },
                   {
                     detail: "Program kurs - indywidualny",
@@ -137,6 +231,7 @@ export const Offer = () => {
           />
           <Workshops
             sectionName="Kursy na poziomie średniozaawansowanym"
+            id="kursy-dj-dla-sredniozaawansowanych"
             subtitle="Zajęcia skierowane do osób, które ukończyły kurs podstawowy lub z podstawową / średnio zaawansowaną wiedzą"
             services={[
               {
@@ -145,15 +240,14 @@ export const Offer = () => {
                   { detail: "Kontynuacja po zakończeniu kursu podstawowego" },
                   { detail: "Poziom: Średniozaawansowany" },
                   { detail: "Dedykowany dla osób: 16 +" },
-                  { detail: "Czas trwania kursu: 8 spotkań" },
+                  { detail: "Czas trwania kursu: 4 spotkań" },
                   { detail: "Czas trwania zajęć: 150 min." },
                   {
                     detail:
                       "Częstotliwość zajęć: 1 spotkanie na tydzień w dni robocze",
                   },
                   {
-                    detail:
-                      "Cena: 800 zł (możliwość płatności w 2 ratach po 400 zł)",
+                    detail: "Cena: 400zł",
                   },
                 ],
               },
@@ -163,15 +257,14 @@ export const Offer = () => {
                   { detail: "Kontynuacja po zakończeniu kursu podstawowego" },
                   { detail: "Poziom: Średniozaawansowany" },
                   { detail: "Dedykowany dla osób: 10 +" },
-                  { detail: "Czas trwania kursu: 8 spotkań" },
+                  { detail: "Czas trwania kursu: 4 spotkań" },
                   { detail: "Czas trwania zajęć: 90 min." },
                   {
                     detail:
                       "Częstotliwość zajęć: 1 spotkanie na tydzień w dni robocze",
                   },
                   {
-                    detail:
-                      "Cena: 1200 zł (możliwość płatności w 2 ratach po 600 zł)",
+                    detail: "Cena: 600zł",
                   },
                 ],
               },
@@ -180,6 +273,7 @@ export const Offer = () => {
           <div style={{ marginTop: "100px" }}>
             <Workshops
               sectionName="Warsztaty uzupełniające"
+              id="warsztaty-uzupelniajace"
               subtitle=""
               services={[
                 {
