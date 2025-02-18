@@ -60,6 +60,9 @@ export const Navigation = () => {
       <Link to="/oferta" onClick={() => setIsMenuOpen(false)}>
         Oferta
       </Link>
+      <Link to="/warsztaty-dla-dzieci" onClick={() => setIsMenuOpen(false)}>
+        Warsztaty dla dzieci
+      </Link>
       <Link to="/wynajem" onClick={() => setIsMenuOpen(false)}>
         Wynajem przestrzeni
       </Link>

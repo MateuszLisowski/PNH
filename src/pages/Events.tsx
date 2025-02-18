@@ -15,13 +15,6 @@ import { useScrollToSection } from "../utils/useScrollToSection";
 export const Events = () => {
   const events = [
     {
-      foto: anotherEventImage,
-      title: "New Hope: This is my House",
-      date: "14.02.2025",
-      place: "Piwnica Projektu New Hope / Wyszyńskiego 6A/07",
-      link: "",
-    },
-    {
       foto: eventImageAnother,
       title: "New Hope: MOTOR CITY",
       date: "15.03.2025",

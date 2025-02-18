@@ -17,6 +17,7 @@ import { NotFound } from "./pages/NotFound";
 import { PastEvents } from "./pages/PastEvents";
 import { Rent } from "./pages/Rent";
 import ScrollToTop from "./utils/ScrollToTop";
+import { WorkshopsChildren } from "./pages/WorkshopsChildren";
 import { useEffect } from "react";
 // import { Shop } from "./pages/Shop";
 
@@ -50,6 +51,10 @@ function App() {
             <Route path="/wynajem" element={<Rent />} />
             <Route path="/kontakt" element={<Contact />} />
             <Route path="/voucher" element={<Voucher />} />
+            <Route
+              path="/warsztaty-dla-dzieci"
+              element={<WorkshopsChildren />}
+            />
             {/* <Route path="/shop" element={<Shop />} /> */}
             {/* <Route path="/pnh-collective" element={<Collective />} /> */}
             <Route path="/archiwum-wydarzen" element={<PastEvents />} />
