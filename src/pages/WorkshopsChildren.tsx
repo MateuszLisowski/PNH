@@ -5,7 +5,9 @@ import { cx } from "../utils/classnames";
 import { useScrollToSection } from "../utils/useScrollToSection";
 import { Workshops } from "../components/Workshops";
 import homeStyles from "./Home.module.css";
-import wokshopsChildren from "../assets/workshops-children.jpg";
+import wokshopsChildrenPoster from "../assets/workshops-children-poster.jpg";
+import wokshopsChildrenPhoto from "../assets/children-workshops-photo.jpg";
+import wokshopsChildrenVinyl from "../assets/children-workshops-vinyl.jpg";
 import { Link } from "react-router-dom";
 
 export const WorkshopsChildren = () => {
@@ -70,7 +72,11 @@ export const WorkshopsChildren = () => {
               ]}
             />
           </div>
-          <img src={wokshopsChildren} alt="voucher" className={styles.image} />
+          <img
+            src={wokshopsChildrenPhoto}
+            alt="warsztaty dla dzieci i młodzieży"
+            className={styles.image}
+          />
         </section>
         <section>
           <h2 className={reusableStyles.sectionTitle}>Organizator:</h2>
@@ -115,6 +121,18 @@ export const WorkshopsChildren = () => {
               Wypełnij formularz zgłoszeniowy
             </Link>
           </div>
+        </section>
+        <section className={styles.bottomImages}>
+          <img
+            src={wokshopsChildrenVinyl}
+            alt="warsztaty dla dzieci i młodzieży - winyl"
+            className={styles.image}
+          />
+          <img
+            src={wokshopsChildrenPoster}
+            alt="plakat warsztatów dla dzieci i młodzieży"
+            className={styles.image}
+          />
         </section>
       </SubpageLayout>
     </main>

@@ -3,6 +3,10 @@ import styles from "../Reusable.module.css";
 import { useScrollToSection } from "../utils/useScrollToSection";
 import homeStyles from "./Home.module.css";
 import { Link } from "react-router-dom";
+import firstImage from "../assets/IMG_0177.jpg";
+import secondImage from "../assets/IMG_0178.jpg";
+import thirdImage from "../assets/IMG_0183.jpg";
+import rentStyles from "./Rent.module.css";
 
 export const Rent = () => {
   useScrollToSection();
@@ -45,6 +49,11 @@ export const Rent = () => {
               Formularz do wynajmu
             </Link>
           </div>
+          <section className={rentStyles.images}>
+            <img src={firstImage} alt="Projekt New Hope lokal" />
+            <img src={secondImage} alt="Projekt New Hope lokal" />
+            <img src={thirdImage} alt="Projekt New Hope lokal" />
+          </section>
         </section>
       </SubpageLayout>
     </main>

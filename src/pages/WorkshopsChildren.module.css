@@ -54,3 +54,12 @@
     margin-bottom: 45px;
   }
 }
+
+.bottomImages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 40px;
+}

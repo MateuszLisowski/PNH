@@ -3,7 +3,7 @@ import { SingleEvent } from "../components/SingleEvent";
 import { SubpageLayout } from "../components/SubpageLayout";
 // import eventImage from "../assets/event-image.jpg";
 // import anotherEventImage from "../assets/collage/340746994_610941687276072_741370566768146264_n.jpg";
-import eventImageAnother from "../assets/collage/469484396_548290871340620_1492743414641544960_n.jpg";
+// import eventImageAnother from "../assets/collage/469484396_548290871340620_1492743414641544960_n.jpg";
 import evImage from "../assets/collage/470173999_551973430972364_1352481696693358873_n.jpg";
 import image from "../assets/collage/469477871_548289398007434_2425966841379945318_n.jpg";
 import styles from "./Events.module.css";
@@ -14,13 +14,6 @@ import { useScrollToSection } from "../utils/useScrollToSection";
 
 export const Events = () => {
   const events = [
-    {
-      foto: eventImageAnother,
-      title: "New Hope: MOTOR CITY",
-      date: "15.03.2025",
-      place: "Piwnica Projektu New Hope / Wyszyńskiego 6A/07",
-      link: "",
-    },
     {
       foto: evImage,
       title: "New Hope pres. Debiuty",
