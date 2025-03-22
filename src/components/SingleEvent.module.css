@@ -1,17 +1,25 @@
 .image {
-  width: 180px;
+  object-fit: contain;
+  width: 300px;
+  min-width: 300px;
   height: 180px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .event {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
+  gap: 10px;
   line-height: 30px;
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
     max-width: 95vw;
+    margin-bottom: 100px;
   }
 }
 
